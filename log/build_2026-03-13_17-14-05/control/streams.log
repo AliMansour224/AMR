@@ -1,0 +1,24 @@
+[0.890s] Invoking command in '/home/ahmed/colcon_ws/build/control': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ahmed/colcon_ws/build/control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ahmed/colcon_ws/install/control/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ahmed/colcon_ws/build/control/build --no-deps symlink_data
+[1.257s] running develop
+[1.515s] running egg_info
+[1.515s] creating control.egg-info
+[1.541s] writing control.egg-info/PKG-INFO
+[1.541s] writing dependency_links to control.egg-info/dependency_links.txt
+[1.541s] writing entry points to control.egg-info/entry_points.txt
+[1.541s] writing requirements to control.egg-info/requires.txt
+[1.542s] writing top-level names to control.egg-info/top_level.txt
+[1.542s] writing manifest file 'control.egg-info/SOURCES.txt'
+[1.594s] reading manifest file 'control.egg-info/SOURCES.txt'
+[1.595s] writing manifest file 'control.egg-info/SOURCES.txt'
+[1.622s] running build_ext
+[1.623s] Creating /home/ahmed/colcon_ws/install/control/lib/python3.12/site-packages/control.egg-link (link to .)
+[1.623s] Installing reactive_driver script to /home/ahmed/colcon_ws/install/control/lib/control
+[1.623s] 
+[1.624s] Installed /home/ahmed/colcon_ws/build/control
+[1.624s] running symlink_data
+[1.624s] creating /home/ahmed/colcon_ws/install/control/share/ament_index
+[1.624s] creating /home/ahmed/colcon_ws/install/control/share/ament_index/resource_index
+[1.624s] creating /home/ahmed/colcon_ws/install/control/share/ament_index/resource_index/packages
+[1.624s] symbolically linking /home/ahmed/colcon_ws/build/control/resource/control -> /home/ahmed/colcon_ws/install/control/share/ament_index/resource_index/packages
+[1.624s] symbolically linking /home/ahmed/colcon_ws/build/control/package.xml -> /home/ahmed/colcon_ws/install/control/share/control
+[1.654s] Invoked command in '/home/ahmed/colcon_ws/build/control' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ahmed/colcon_ws/build/control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ahmed/colcon_ws/install/control/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ahmed/colcon_ws/build/control/build --no-deps symlink_data

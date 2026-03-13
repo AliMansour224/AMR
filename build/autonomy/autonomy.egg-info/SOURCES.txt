@@ -1,0 +1,12 @@
+package.xml
+setup.cfg
+setup.py
+autonomy/__init__.py
+autonomy.egg-info/PKG-INFO
+autonomy.egg-info/SOURCES.txt
+autonomy.egg-info/dependency_links.txt
+autonomy.egg-info/requires.txt
+autonomy.egg-info/top_level.txt
+autonomy.egg-info/zip-safe
+launch/autonomy_bringup.launch.py
+resource/autonomy

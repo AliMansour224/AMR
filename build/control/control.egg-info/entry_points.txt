@@ -1,0 +1,4 @@
+[console_scripts]
+control_node = control.control_node:main
+odom_tf_broadcaster = control.odom_tf_broadcaster:main
+reactive_driver = control.reactive_driver:main
