@@ -22,6 +22,9 @@ setup(
         (os.path.join('share', package_name, 'models', 'lidar_test'), glob('models/lidar_test/*')),
         #sparkx_car model
         (os.path.join('share', package_name, 'models', 'sparkx_car'), glob('models/sparkx_car/*')),
+        #imu_test model
+        (os.path.join('share', package_name, 'models', 'imu_test'), glob('models/imu_test/*')),
+
     ],
     install_requires=['setuptools'],
     zip_safe=True,

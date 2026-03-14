@@ -1,0 +1,43 @@
+running develop
+Removing /home/ahmed/colcon_ws/install/sensor_drivers/lib/python3.12/site-packages/sensor-drivers.egg-link (link to .)
+running egg_info
+writing ../../build/sensor_drivers/sensor_drivers.egg-info/PKG-INFO
+writing dependency_links to ../../build/sensor_drivers/sensor_drivers.egg-info/dependency_links.txt
+writing entry points to ../../build/sensor_drivers/sensor_drivers.egg-info/entry_points.txt
+writing requirements to ../../build/sensor_drivers/sensor_drivers.egg-info/requires.txt
+writing top-level names to ../../build/sensor_drivers/sensor_drivers.egg-info/top_level.txt
+reading manifest file '../../build/sensor_drivers/sensor_drivers.egg-info/SOURCES.txt'
+writing manifest file '../../build/sensor_drivers/sensor_drivers.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/ahmed/colcon_ws/build/sensor_drivers/build
+creating /home/ahmed/colcon_ws/build/sensor_drivers/build/lib
+creating /home/ahmed/colcon_ws/build/sensor_drivers/build/lib/sensor_drivers
+copying sensor_drivers/odometry_bridge.py -> /home/ahmed/colcon_ws/build/sensor_drivers/build/lib/sensor_drivers
+copying sensor_drivers/__init__.py -> /home/ahmed/colcon_ws/build/sensor_drivers/build/lib/sensor_drivers
+copying sensor_drivers/sensor_node.py -> /home/ahmed/colcon_ws/build/sensor_drivers/build/lib/sensor_drivers
+copying sensor_drivers/lidar_driver.py -> /home/ahmed/colcon_ws/build/sensor_drivers/build/lib/sensor_drivers
+copying sensor_drivers/imu_driver.py -> /home/ahmed/colcon_ws/build/sensor_drivers/build/lib/sensor_drivers
+running install
+running install_lib
+creating /home/ahmed/colcon_ws/install/sensor_drivers/lib/python3.12/site-packages/sensor_drivers
+copying /home/ahmed/colcon_ws/build/sensor_drivers/build/lib/sensor_drivers/odometry_bridge.py -> /home/ahmed/colcon_ws/install/sensor_drivers/lib/python3.12/site-packages/sensor_drivers
+copying /home/ahmed/colcon_ws/build/sensor_drivers/build/lib/sensor_drivers/__init__.py -> /home/ahmed/colcon_ws/install/sensor_drivers/lib/python3.12/site-packages/sensor_drivers
+copying /home/ahmed/colcon_ws/build/sensor_drivers/build/lib/sensor_drivers/sensor_node.py -> /home/ahmed/colcon_ws/install/sensor_drivers/lib/python3.12/site-packages/sensor_drivers
+copying /home/ahmed/colcon_ws/build/sensor_drivers/build/lib/sensor_drivers/lidar_driver.py -> /home/ahmed/colcon_ws/install/sensor_drivers/lib/python3.12/site-packages/sensor_drivers
+copying /home/ahmed/colcon_ws/build/sensor_drivers/build/lib/sensor_drivers/imu_driver.py -> /home/ahmed/colcon_ws/install/sensor_drivers/lib/python3.12/site-packages/sensor_drivers
+byte-compiling /home/ahmed/colcon_ws/install/sensor_drivers/lib/python3.12/site-packages/sensor_drivers/odometry_bridge.py to odometry_bridge.cpython-312.pyc
+byte-compiling /home/ahmed/colcon_ws/install/sensor_drivers/lib/python3.12/site-packages/sensor_drivers/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/ahmed/colcon_ws/install/sensor_drivers/lib/python3.12/site-packages/sensor_drivers/sensor_node.py to sensor_node.cpython-312.pyc
+byte-compiling /home/ahmed/colcon_ws/install/sensor_drivers/lib/python3.12/site-packages/sensor_drivers/lidar_driver.py to lidar_driver.cpython-312.pyc
+byte-compiling /home/ahmed/colcon_ws/install/sensor_drivers/lib/python3.12/site-packages/sensor_drivers/imu_driver.py to imu_driver.cpython-312.pyc
+running install_data
+copying resource/sensor_drivers -> /home/ahmed/colcon_ws/install/sensor_drivers/share/ament_index/resource_index/packages
+copying package.xml -> /home/ahmed/colcon_ws/install/sensor_drivers/share/sensor_drivers
+running install_egg_info
+Copying ../../build/sensor_drivers/sensor_drivers.egg-info to /home/ahmed/colcon_ws/install/sensor_drivers/lib/python3.12/site-packages/sensor_drivers-0.0.0-py3.12.egg-info
+running install_scripts
+Installing imu_driver script to /home/ahmed/colcon_ws/install/sensor_drivers/lib/sensor_drivers
+Installing lidar_driver script to /home/ahmed/colcon_ws/install/sensor_drivers/lib/sensor_drivers
+Installing odometry_bridge script to /home/ahmed/colcon_ws/install/sensor_drivers/lib/sensor_drivers
+writing list of installed files to '/home/ahmed/colcon_ws/build/sensor_drivers/install.log'

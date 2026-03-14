@@ -1,0 +1,4 @@
+[console_scripts]
+imu_driver = sensor_drivers.imu_driver:main
+lidar_driver = sensor_drivers.lidar_driver:main
+odometry_bridge = sensor_drivers.odometry_bridge:main

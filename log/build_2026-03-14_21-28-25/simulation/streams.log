@@ -1,0 +1,15 @@
+[1.065s] Invoking command in '/home/ahmed/colcon_ws/build/simulation': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ahmed/colcon_ws/build/simulation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ahmed/colcon_ws/install/simulation/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ahmed/colcon_ws/build/simulation/build --no-deps symlink_data
+[1.413s] running develop
+[1.640s] running egg_info
+[1.661s] writing simulation.egg-info/PKG-INFO
+[1.662s] writing dependency_links to simulation.egg-info/dependency_links.txt
+[1.662s] writing requirements to simulation.egg-info/requires.txt
+[1.662s] writing top-level names to simulation.egg-info/top_level.txt
+[1.706s] reading manifest file 'simulation.egg-info/SOURCES.txt'
+[1.707s] writing manifest file 'simulation.egg-info/SOURCES.txt'
+[1.730s] running build_ext
+[1.730s] Creating /home/ahmed/colcon_ws/install/simulation/lib/python3.12/site-packages/simulation.egg-link (link to .)
+[1.731s] 
+[1.731s] Installed /home/ahmed/colcon_ws/build/simulation
+[1.731s] running symlink_data
+[1.760s] Invoked command in '/home/ahmed/colcon_ws/build/simulation' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ahmed/colcon_ws/build/simulation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ahmed/colcon_ws/install/simulation/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ahmed/colcon_ws/build/simulation/build --no-deps symlink_data

@@ -15,7 +15,7 @@ class PerceptionNode(Node):
 
         self.scan_sub = self.create_subscription(
             LaserScan,
-            '/scan',
+            '/sensors/lidar/scan',
             self.scan_callback,
             10
         )

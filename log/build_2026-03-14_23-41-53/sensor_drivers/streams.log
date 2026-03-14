@@ -1,0 +1,47 @@
+[1.224s] Invoking command in '/home/ahmed/colcon_ws/build/sensor_drivers': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ahmed/colcon_ws/build/sensor_drivers/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ahmed/colcon_ws/install/sensor_drivers/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/ahmed/colcon_ws/build/sensor_drivers/build
+[1.691s] running develop
+[2.025s] Removing /home/ahmed/colcon_ws/install/sensor_drivers/lib/python3.12/site-packages/sensor-drivers.egg-link (link to .)
+[2.061s] Invoked command in '/home/ahmed/colcon_ws/build/sensor_drivers' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ahmed/colcon_ws/build/sensor_drivers/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ahmed/colcon_ws/install/sensor_drivers/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/ahmed/colcon_ws/build/sensor_drivers/build
+[2.063s] Invoking command in '/home/ahmed/colcon_ws/src/sensor_drivers': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ahmed/colcon_ws/build/sensor_drivers/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ahmed/colcon_ws/install/sensor_drivers/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/sensor_drivers build --build-base /home/ahmed/colcon_ws/build/sensor_drivers/build install --record /home/ahmed/colcon_ws/build/sensor_drivers/install.log --single-version-externally-managed install_data --force
+[2.479s] running egg_info
+[2.512s] writing ../../build/sensor_drivers/sensor_drivers.egg-info/PKG-INFO
+[2.512s] writing dependency_links to ../../build/sensor_drivers/sensor_drivers.egg-info/dependency_links.txt
+[2.513s] writing entry points to ../../build/sensor_drivers/sensor_drivers.egg-info/entry_points.txt
+[2.513s] writing requirements to ../../build/sensor_drivers/sensor_drivers.egg-info/requires.txt
+[2.513s] writing top-level names to ../../build/sensor_drivers/sensor_drivers.egg-info/top_level.txt
+[2.582s] reading manifest file '../../build/sensor_drivers/sensor_drivers.egg-info/SOURCES.txt'
+[2.583s] writing manifest file '../../build/sensor_drivers/sensor_drivers.egg-info/SOURCES.txt'
+[2.583s] running build
+[2.583s] running build_py
+[2.584s] creating /home/ahmed/colcon_ws/build/sensor_drivers/build
+[2.584s] creating /home/ahmed/colcon_ws/build/sensor_drivers/build/lib
+[2.584s] creating /home/ahmed/colcon_ws/build/sensor_drivers/build/lib/sensor_drivers
+[2.584s] copying sensor_drivers/odometry_bridge.py -> /home/ahmed/colcon_ws/build/sensor_drivers/build/lib/sensor_drivers
+[2.584s] copying sensor_drivers/__init__.py -> /home/ahmed/colcon_ws/build/sensor_drivers/build/lib/sensor_drivers
+[2.584s] copying sensor_drivers/sensor_node.py -> /home/ahmed/colcon_ws/build/sensor_drivers/build/lib/sensor_drivers
+[2.585s] copying sensor_drivers/lidar_driver.py -> /home/ahmed/colcon_ws/build/sensor_drivers/build/lib/sensor_drivers
+[2.585s] copying sensor_drivers/imu_driver.py -> /home/ahmed/colcon_ws/build/sensor_drivers/build/lib/sensor_drivers
+[2.585s] running install
+[2.594s] running install_lib
+[2.627s] creating /home/ahmed/colcon_ws/install/sensor_drivers/lib/python3.12/site-packages/sensor_drivers
+[2.628s] copying /home/ahmed/colcon_ws/build/sensor_drivers/build/lib/sensor_drivers/odometry_bridge.py -> /home/ahmed/colcon_ws/install/sensor_drivers/lib/python3.12/site-packages/sensor_drivers
+[2.628s] copying /home/ahmed/colcon_ws/build/sensor_drivers/build/lib/sensor_drivers/__init__.py -> /home/ahmed/colcon_ws/install/sensor_drivers/lib/python3.12/site-packages/sensor_drivers
+[2.628s] copying /home/ahmed/colcon_ws/build/sensor_drivers/build/lib/sensor_drivers/sensor_node.py -> /home/ahmed/colcon_ws/install/sensor_drivers/lib/python3.12/site-packages/sensor_drivers
+[2.628s] copying /home/ahmed/colcon_ws/build/sensor_drivers/build/lib/sensor_drivers/lidar_driver.py -> /home/ahmed/colcon_ws/install/sensor_drivers/lib/python3.12/site-packages/sensor_drivers
+[2.628s] copying /home/ahmed/colcon_ws/build/sensor_drivers/build/lib/sensor_drivers/imu_driver.py -> /home/ahmed/colcon_ws/install/sensor_drivers/lib/python3.12/site-packages/sensor_drivers
+[2.629s] byte-compiling /home/ahmed/colcon_ws/install/sensor_drivers/lib/python3.12/site-packages/sensor_drivers/odometry_bridge.py to odometry_bridge.cpython-312.pyc
+[2.630s] byte-compiling /home/ahmed/colcon_ws/install/sensor_drivers/lib/python3.12/site-packages/sensor_drivers/__init__.py to __init__.cpython-312.pyc
+[2.630s] byte-compiling /home/ahmed/colcon_ws/install/sensor_drivers/lib/python3.12/site-packages/sensor_drivers/sensor_node.py to sensor_node.cpython-312.pyc
+[2.631s] byte-compiling /home/ahmed/colcon_ws/install/sensor_drivers/lib/python3.12/site-packages/sensor_drivers/lidar_driver.py to lidar_driver.cpython-312.pyc
+[2.631s] byte-compiling /home/ahmed/colcon_ws/install/sensor_drivers/lib/python3.12/site-packages/sensor_drivers/imu_driver.py to imu_driver.cpython-312.pyc
+[2.632s] running install_data
+[2.632s] copying resource/sensor_drivers -> /home/ahmed/colcon_ws/install/sensor_drivers/share/ament_index/resource_index/packages
+[2.632s] copying package.xml -> /home/ahmed/colcon_ws/install/sensor_drivers/share/sensor_drivers
+[2.632s] running install_egg_info
+[2.668s] Copying ../../build/sensor_drivers/sensor_drivers.egg-info to /home/ahmed/colcon_ws/install/sensor_drivers/lib/python3.12/site-packages/sensor_drivers-0.0.0-py3.12.egg-info
+[2.669s] running install_scripts
+[2.876s] Installing imu_driver script to /home/ahmed/colcon_ws/install/sensor_drivers/lib/sensor_drivers
+[2.877s] Installing lidar_driver script to /home/ahmed/colcon_ws/install/sensor_drivers/lib/sensor_drivers
+[2.877s] Installing odometry_bridge script to /home/ahmed/colcon_ws/install/sensor_drivers/lib/sensor_drivers
+[2.877s] writing list of installed files to '/home/ahmed/colcon_ws/build/sensor_drivers/install.log'
+[2.912s] Invoked command in '/home/ahmed/colcon_ws/src/sensor_drivers' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ahmed/colcon_ws/build/sensor_drivers/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ahmed/colcon_ws/install/sensor_drivers/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/sensor_drivers build --build-base /home/ahmed/colcon_ws/build/sensor_drivers/build install --record /home/ahmed/colcon_ws/build/sensor_drivers/install.log --single-version-externally-managed install_data --force

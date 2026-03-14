@@ -8,6 +8,8 @@ setup.py
 ../../build/simulation/simulation.egg-info/zip-safe
 launch/rsp.launch.py
 launch/sim_bringup.launch.py
+models/imu_test/model.config
+models/imu_test/model.sdf
 models/lidar_test/model.config
 models/lidar_test/model.sdf
 models/sparkx_car/model.config

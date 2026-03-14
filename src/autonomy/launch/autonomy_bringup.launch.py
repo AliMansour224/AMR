@@ -9,12 +9,32 @@ import os
 
 def generate_launch_description():
 
-    simulation_launch = IncludeLaunchDescription(
+    sim_bringup_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
             os.path.join(
                 get_package_share_directory('simulation'),
                 'launch',
                 'sim_bringup.launch.py'
+            )
+        )
+    )
+
+    rsp_launch = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(
+            os.path.join(
+                get_package_share_directory('simulation'),
+                'launch',
+                'rsp.launch.py'
+            )
+        )
+    )
+
+    sensor_bringup_launch = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(
+            os.path.join(
+                get_package_share_directory('autonomy'),
+                'launch',
+                'sensor_bringup.launch.py'
             )
         )
     )
@@ -41,7 +61,9 @@ def generate_launch_description():
     )
 
     return LaunchDescription([
-        simulation_launch,
+        rsp_launch,
+        sim_bringup_launch,
+        sensor_bringup_launch,
         perception_node,
         planning_node,
         control_node
