@@ -1,1 +1,0 @@
-/home/ahmed/colcon_ws/build/autonomy_msgs/rosidl_generator_c/autonomy_msgs/msg/detection_array.h

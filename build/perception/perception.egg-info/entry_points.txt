@@ -1,3 +1,0 @@
-[console_scripts]
-lidar_perception_node = perception.lidar_perception_node:main
-perception_node = perception.perception_node:main

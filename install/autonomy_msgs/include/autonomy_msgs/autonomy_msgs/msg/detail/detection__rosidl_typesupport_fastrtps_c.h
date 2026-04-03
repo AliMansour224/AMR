@@ -1,1 +1,0 @@
-/home/ahmed/colcon_ws/build/autonomy_msgs/rosidl_typesupport_fastrtps_c/autonomy_msgs/msg/detail/detection__rosidl_typesupport_fastrtps_c.h

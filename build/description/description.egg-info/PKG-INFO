@@ -1,7 +1,0 @@
-Metadata-Version: 2.1
-Name: description
-Version: 0.0.1
-Summary: Robot description package with URDF/Xacro and TF frame definitions.
-Maintainer: Ahmed
-Maintainer-email: ahmedlearningfinnish@gmail.com
-License: Apache-2.0

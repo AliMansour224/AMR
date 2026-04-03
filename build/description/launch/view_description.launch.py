@@ -1,1 +1,0 @@
-/home/ahmed/colcon_ws/src/description/launch/view_description.launch.py

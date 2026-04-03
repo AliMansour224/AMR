@@ -1,7 +1,0 @@
-Metadata-Version: 2.1
-Name: bridge
-Version: 0.0.1
-Summary: ROS 2 bridge node between autonomy stack and STM32 vehicle controller.
-Maintainer: Ahmed
-Maintainer-email: ahmedlearningfinnish@gmail.com
-License: Apache-2.0

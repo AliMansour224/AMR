@@ -1,1 +1,0 @@
-/home/ahmed/colcon_ws/src/simulation/launch/rsp.launch.py

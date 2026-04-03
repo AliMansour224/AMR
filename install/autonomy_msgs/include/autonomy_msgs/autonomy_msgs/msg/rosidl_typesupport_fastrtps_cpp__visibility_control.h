@@ -1,1 +1,0 @@
-/home/ahmed/colcon_ws/build/autonomy_msgs/rosidl_typesupport_fastrtps_cpp/autonomy_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h

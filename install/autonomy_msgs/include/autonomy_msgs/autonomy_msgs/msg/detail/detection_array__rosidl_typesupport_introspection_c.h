@@ -1,1 +1,0 @@
-/home/ahmed/colcon_ws/build/autonomy_msgs/rosidl_typesupport_introspection_c/autonomy_msgs/msg/detail/detection_array__rosidl_typesupport_introspection_c.h

@@ -1,6 +1,0 @@
-setup.py
-autonomy_msgs/__init__.py
-autonomy_msgs.egg-info/PKG-INFO
-autonomy_msgs.egg-info/SOURCES.txt
-autonomy_msgs.egg-info/dependency_links.txt
-autonomy_msgs.egg-info/top_level.txt

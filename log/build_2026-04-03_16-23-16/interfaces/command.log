@@ -1,6 +1,0 @@
-Invoking command in '/home/ahmed/colcon_ws/build/interfaces': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ahmed/colcon_ws/src/interfaces -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/ahmed/colcon_ws/install/interfaces
-Invoked command in '/home/ahmed/colcon_ws/build/interfaces' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ahmed/colcon_ws/src/interfaces -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/ahmed/colcon_ws/install/interfaces
-Invoking command in '/home/ahmed/colcon_ws/build/interfaces': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ahmed/colcon_ws/build/interfaces -- -j12 -l12
-Invoked command in '/home/ahmed/colcon_ws/build/interfaces' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ahmed/colcon_ws/build/interfaces -- -j12 -l12
-Invoking command in '/home/ahmed/colcon_ws/build/interfaces': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ahmed/colcon_ws/build/interfaces
-Invoked command in '/home/ahmed/colcon_ws/build/interfaces' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ahmed/colcon_ws/build/interfaces

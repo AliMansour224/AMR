@@ -1,2 +1,0 @@
-[console_scripts]
-planning_node = planning.planning_node:main

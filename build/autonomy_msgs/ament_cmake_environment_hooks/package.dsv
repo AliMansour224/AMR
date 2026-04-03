@@ -1,4 +1,0 @@
-source;share/autonomy_msgs/local_setup.bash
-source;share/autonomy_msgs/local_setup.dsv
-source;share/autonomy_msgs/local_setup.sh
-source;share/autonomy_msgs/local_setup.zsh

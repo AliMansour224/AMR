@@ -1,6 +1,0 @@
-Invoking command in '/home/ahmed/colcon_ws/build/autonomy_msgs': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ahmed/colcon_ws/src/autonomy_msgs -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/ahmed/colcon_ws/install/autonomy_msgs
-Invoked command in '/home/ahmed/colcon_ws/build/autonomy_msgs' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ahmed/colcon_ws/src/autonomy_msgs -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/ahmed/colcon_ws/install/autonomy_msgs
-Invoking command in '/home/ahmed/colcon_ws/build/autonomy_msgs': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ahmed/colcon_ws/build/autonomy_msgs -- -j12 -l12
-Invoked command in '/home/ahmed/colcon_ws/build/autonomy_msgs' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ahmed/colcon_ws/build/autonomy_msgs -- -j12 -l12
-Invoking command in '/home/ahmed/colcon_ws/build/autonomy_msgs': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ahmed/colcon_ws/build/autonomy_msgs
-Invoked command in '/home/ahmed/colcon_ws/build/autonomy_msgs' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ahmed/colcon_ws/build/autonomy_msgs
