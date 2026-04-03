@@ -82,6 +82,7 @@
     </linear_acceleration>
   </imu>
 </sensor>
+
     </link>
 
     <link name="left_wheel">
@@ -150,7 +151,7 @@
       <parent>chassis</parent>
       <child>left_wheel</child>
       <axis>
-        <xyz>0 0 1</xyz>
+        <xyz>0 0 -1</xyz>
       </axis>
     </joint>
 

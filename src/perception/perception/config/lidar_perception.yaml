@@ -1,0 +1,14 @@
+lidar_perception_node:
+  ros__parameters:
+    min_x: 0.0
+    max_x: 3.0
+    max_abs_y: 2.0
+    min_range_threshold: 0.05
+
+    cluster_distance_threshold: 0.35
+    min_cluster_size: 3
+
+    min_detection_distance: 0.2
+    max_detection_distance: 5.0
+    max_cluster_size_x: 0.8
+    max_cluster_size_y: 0.8

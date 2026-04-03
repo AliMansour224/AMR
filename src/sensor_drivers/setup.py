@@ -22,7 +22,8 @@ setup(
         'console_scripts': [
             'lidar_driver = sensor_drivers.lidar_driver:main',
             'imu_driver = sensor_drivers.imu_driver:main',
-            'odometry_bridge = sensor_drivers.odometry_bridge:main'
+            'odometry_bridge = sensor_drivers.odometry_bridge:main',
+            'mock_lidar = sensor_drivers.mock_lidar:main',
         ],
     },
 )

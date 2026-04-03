@@ -33,52 +33,56 @@ class PerceptionNode(Node):
         )
 
         self.obstacle_threshold = 1.0
+        self.min_valid_distance = 0.15
 
         self.get_logger().info('Perception node started.')
 
     def clean_ranges(self, msg: LaserScan):
         cleaned = []
         for r in msg.ranges:
-            if math.isfinite(r) and msg.range_min < r < msg.range_max:
-                cleaned.append(r)
-            else:
+            if not math.isfinite(r):
                 cleaned.append(float('inf'))
+            elif r < self.min_valid_distance:
+                cleaned.append(float('inf'))
+            elif r < msg.range_min or r > msg.range_max:
+                cleaned.append(float('inf'))
+            else:
+                cleaned.append(r)
         return cleaned
 
-    def min_in_sector(self, ranges, start_idx, end_idx):
-        sector = ranges[start_idx:end_idx]
-        if not sector:
+    def min_in_sector_by_angle(self, ranges, msg: LaserScan, angle_start, angle_end):
+        sector_values = []
+
+        for i, r in enumerate(ranges):
+            angle = msg.angle_min + i * msg.angle_increment
+            if angle_start <= angle <= angle_end:
+                sector_values.append(r)
+
+        if not sector_values:
             return float('inf')
-        return min(sector)
+
+        return min(sector_values)
 
     def scan_callback(self, msg: LaserScan):
         ranges = self.clean_ranges(msg)
 
-        n = len(ranges)
-        if n == 0:
-            return
-
-        center = n // 2
-        window = 20
-
-        front_sector = (
-            ranges[max(0, center - window): center + window] +
-            ranges[0:window] +
-            ranges[-window:]
+        front_distance = self.min_in_sector_by_angle(
+            ranges, msg,
+            math.radians(-15.0),
+            math.radians(15.0)
         )
 
-        left_start = n // 4 - window
-        left_end = n // 4 + window
+        left_distance = self.min_in_sector_by_angle(
+            ranges, msg,
+            math.radians(75.0),
+            math.radians(105.0)
+        )
 
-        right_start = (3 * n) // 4 - window
-        right_end = (3 * n) // 4 + window
-
-        left_sector = ranges[max(0, left_start): min(n, left_end)]
-        right_sector = ranges[max(0, right_start): min(n, right_end)]
-
-        front_distance = min(front_sector) if front_sector else float('inf')
-        left_distance = min(left_sector) if left_sector else float('inf')
-        right_distance = min(right_sector) if right_sector else float('inf')
+        right_distance = self.min_in_sector_by_angle(
+            ranges, msg,
+            math.radians(-105.0),
+            math.radians(-75.0)
+        )
 
         distances_msg = Vector3()
         distances_msg.x = front_distance
@@ -89,6 +93,13 @@ class PerceptionNode(Node):
         obstacle_msg = Bool()
         obstacle_msg.data = front_distance < self.obstacle_threshold
         self.obstacle_pub.publish(obstacle_msg)
+
+        self.get_logger().info(
+            f'front={front_distance:.2f}, '
+            f'left={left_distance:.2f}, '
+            f'right={right_distance:.2f}, '
+            f'obstacle={obstacle_msg.data}'
+        )
 
 
 def main(args=None):
