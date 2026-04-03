@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "autonomy_msgs__py",
+		"source" : "/home/ahmed/colcon_ws/build/autonomy_msgs/autonomy_msgs__py"
+	}
+}

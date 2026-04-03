@@ -1,0 +1,211 @@
+[0.011s] Invoking command in '/home/ahmed/colcon_ws/build/interfaces': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ahmed/colcon_ws/src/interfaces -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/ahmed/colcon_ws/install/interfaces
+[0.025s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.055s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.139s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[0.142s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.179s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.210s] -- Found rosidl_adapter: 4.6.7 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[0.212s] -- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)
+[0.523s] -- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[0.661s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.843s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.844s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[1.115s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[1.144s] -- Configuring done (1.1s)
+[1.179s] -- Generating done (0.0s)
+[1.192s] -- Build files have been written to: /home/ahmed/colcon_ws/build/interfaces
+[1.198s] Invoked command in '/home/ahmed/colcon_ws/build/interfaces' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ahmed/colcon_ws/src/interfaces -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/ahmed/colcon_ws/install/interfaces
+[1.200s] Invoking command in '/home/ahmed/colcon_ws/build/interfaces': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ahmed/colcon_ws/build/interfaces -- -j12 -l12
+[1.246s] [  1%] Built target interfaces__rosidl_generator_type_description
+[1.254s] [  1%] Built target ament_cmake_python_copy_interfaces
+[1.264s] [  3%] Built target interfaces__cpp
+[1.268s] [ 24%] Built target interfaces__rosidl_generator_c
+[1.289s] [ 42%] Built target interfaces__rosidl_typesupport_c
+[1.289s] [ 42%] Built target interfaces__rosidl_typesupport_introspection_c
+[1.290s] [ 51%] Built target interfaces__rosidl_typesupport_cpp
+[1.291s] [ 61%] Built target interfaces__rosidl_typesupport_fastrtps_cpp
+[1.296s] [ 79%] Built target interfaces__rosidl_typesupport_fastrtps_c
+[1.297s] [ 79%] Built target interfaces__rosidl_typesupport_introspection_cpp
+[1.316s] [ 79%] Built target interfaces
+[1.334s] [ 81%] Built target interfaces__py
+[1.357s] [ 88%] Built target interfaces__rosidl_generator_py
+[1.377s] [100%] Built target interfaces_s__rosidl_typesupport_c
+[1.378s] [100%] Built target interfaces_s__rosidl_typesupport_fastrtps_c
+[1.378s] [100%] Built target interfaces_s__rosidl_typesupport_introspection_c
+[1.503s] running egg_info
+[1.528s] writing interfaces.egg-info/PKG-INFO
+[1.528s] writing dependency_links to interfaces.egg-info/dependency_links.txt
+[1.528s] writing top-level names to interfaces.egg-info/top_level.txt
+[1.598s] reading manifest file 'interfaces.egg-info/SOURCES.txt'
+[1.598s] writing manifest file 'interfaces.egg-info/SOURCES.txt'
+[1.624s] [100%] Built target ament_cmake_python_build_interfaces_egg
+[1.634s] Invoked command in '/home/ahmed/colcon_ws/build/interfaces' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ahmed/colcon_ws/build/interfaces -- -j12 -l12
+[1.644s] Invoking command in '/home/ahmed/colcon_ws/build/interfaces': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ahmed/colcon_ws/build/interfaces
+[1.653s] -- Install configuration: ""
+[1.653s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/share/ament_index/resource_index/rosidl_interfaces/interfaces
+[1.653s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/share/interfaces/msg/VehicleStatus.json
+[1.653s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/share/interfaces/msg/SafetyStatus.json
+[1.654s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/share/interfaces/msg/BridgeStatus.json
+[1.654s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces
+[1.654s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces/msg
+[1.654s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces/msg/detail
+[1.654s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces/msg/detail/vehicle_status__description.c
+[1.654s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces/msg/detail/safety_status__struct.h
+[1.654s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces/msg/detail/safety_status__description.c
+[1.654s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces/msg/detail/bridge_status__functions.c
+[1.654s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces/msg/detail/bridge_status__type_support.c
+[1.654s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces/msg/detail/vehicle_status__type_support.h
+[1.655s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces/msg/detail/safety_status__functions.c
+[1.655s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces/msg/detail/bridge_status__functions.h
+[1.655s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces/msg/detail/vehicle_status__type_support.c
+[1.655s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces/msg/detail/safety_status__functions.h
+[1.655s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces/msg/detail/safety_status__type_support.c
+[1.655s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces/msg/detail/vehicle_status__struct.h
+[1.655s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces/msg/detail/bridge_status__struct.h
+[1.655s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces/msg/detail/bridge_status__description.c
+[1.655s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces/msg/detail/vehicle_status__functions.h
+[1.655s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces/msg/detail/bridge_status__type_support.h
+[1.656s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces/msg/detail/safety_status__type_support.h
+[1.656s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces/msg/detail/vehicle_status__functions.c
+[1.656s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces/msg/bridge_status.h
+[1.656s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces/msg/rosidl_generator_c__visibility_control.h
+[1.656s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces/msg/safety_status.h
+[1.656s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces/msg/vehicle_status.h
+[1.656s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/share/interfaces/environment/library_path.sh
+[1.656s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/share/interfaces/environment/library_path.dsv
+[1.656s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/lib/libinterfaces__rosidl_generator_c.so
+[1.656s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces
+[1.656s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces/msg
+[1.657s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces/msg/detail
+[1.657s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces/msg/detail/vehicle_status__rosidl_typesupport_fastrtps_c.h
+[1.657s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces/msg/detail/safety_status__rosidl_typesupport_fastrtps_c.h
+[1.657s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces/msg/detail/bridge_status__rosidl_typesupport_fastrtps_c.h
+[1.657s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[1.657s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/lib/libinterfaces__rosidl_typesupport_fastrtps_c.so
+[1.657s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces
+[1.657s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces/msg
+[1.657s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces/msg/detail
+[1.657s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces/msg/detail/bridge_status__rosidl_typesupport_introspection_c.h
+[1.657s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces/msg/detail/bridge_status__type_support.c
+[1.658s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces/msg/detail/vehicle_status__type_support.c
+[1.658s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces/msg/detail/safety_status__type_support.c
+[1.658s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces/msg/detail/safety_status__rosidl_typesupport_introspection_c.h
+[1.658s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces/msg/detail/vehicle_status__rosidl_typesupport_introspection_c.h
+[1.658s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[1.658s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/lib/libinterfaces__rosidl_typesupport_introspection_c.so
+[1.658s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/lib/libinterfaces__rosidl_typesupport_c.so
+[1.658s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces
+[1.658s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces/msg
+[1.658s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces/msg/detail
+[1.658s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces/msg/detail/bridge_status__struct.hpp
+[1.658s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces/msg/detail/bridge_status__traits.hpp
+[1.658s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces/msg/detail/safety_status__type_support.hpp
+[1.658s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces/msg/detail/vehicle_status__traits.hpp
+[1.658s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces/msg/detail/safety_status__builder.hpp
+[1.659s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces/msg/detail/vehicle_status__type_support.hpp
+[1.659s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces/msg/detail/bridge_status__type_support.hpp
+[1.659s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces/msg/detail/vehicle_status__builder.hpp
+[1.659s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces/msg/detail/safety_status__traits.hpp
+[1.659s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces/msg/detail/bridge_status__builder.hpp
+[1.659s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces/msg/detail/safety_status__struct.hpp
+[1.659s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces/msg/detail/vehicle_status__struct.hpp
+[1.659s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces/msg/safety_status.hpp
+[1.659s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces/msg/vehicle_status.hpp
+[1.659s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[1.659s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces/msg/bridge_status.hpp
+[1.659s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces
+[1.659s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces/msg
+[1.659s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[1.660s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces/msg/detail
+[1.660s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces/msg/detail/dds_fastrtps
+[1.660s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces/msg/detail/bridge_status__rosidl_typesupport_fastrtps_cpp.hpp
+[1.660s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces/msg/detail/safety_status__rosidl_typesupport_fastrtps_cpp.hpp
+[1.660s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces/msg/detail/vehicle_status__rosidl_typesupport_fastrtps_cpp.hpp
+[1.660s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/lib/libinterfaces__rosidl_typesupport_fastrtps_cpp.so
+[1.660s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces
+[1.660s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces/msg
+[1.660s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces/msg/detail
+[1.660s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces/msg/detail/vehicle_status__rosidl_typesupport_introspection_cpp.hpp
+[1.660s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces/msg/detail/bridge_status__rosidl_typesupport_introspection_cpp.hpp
+[1.660s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces/msg/detail/safety_status__type_support.cpp
+[1.660s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces/msg/detail/vehicle_status__type_support.cpp
+[1.660s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces/msg/detail/bridge_status__type_support.cpp
+[1.661s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/include/interfaces/interfaces/msg/detail/safety_status__rosidl_typesupport_introspection_cpp.hpp
+[1.661s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/lib/libinterfaces__rosidl_typesupport_introspection_cpp.so
+[1.661s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/lib/libinterfaces__rosidl_typesupport_cpp.so
+[1.661s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/share/interfaces/environment/pythonpath.sh
+[1.661s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/share/interfaces/environment/pythonpath.dsv
+[1.661s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/lib/python3.12/site-packages/interfaces-0.0.1-py3.12.egg-info
+[1.661s] -- Installing: /home/ahmed/colcon_ws/install/interfaces/lib/python3.12/site-packages/interfaces-0.0.1-py3.12.egg-info/top_level.txt
+[1.661s] -- Installing: /home/ahmed/colcon_ws/install/interfaces/lib/python3.12/site-packages/interfaces-0.0.1-py3.12.egg-info/SOURCES.txt
+[1.661s] -- Installing: /home/ahmed/colcon_ws/install/interfaces/lib/python3.12/site-packages/interfaces-0.0.1-py3.12.egg-info/dependency_links.txt
+[1.661s] -- Installing: /home/ahmed/colcon_ws/install/interfaces/lib/python3.12/site-packages/interfaces-0.0.1-py3.12.egg-info/PKG-INFO
+[1.661s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/lib/python3.12/site-packages/interfaces
+[1.661s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/lib/python3.12/site-packages/interfaces/_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[1.661s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/lib/python3.12/site-packages/interfaces/_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[1.661s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/lib/python3.12/site-packages/interfaces/_interfaces_s.ep.rosidl_typesupport_c.c
+[1.662s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/lib/python3.12/site-packages/interfaces/msg
+[1.662s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/lib/python3.12/site-packages/interfaces/msg/_vehicle_status_s.c
+[1.662s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/lib/python3.12/site-packages/interfaces/msg/_safety_status.py
+[1.662s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/lib/python3.12/site-packages/interfaces/msg/_bridge_status.py
+[1.662s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/lib/python3.12/site-packages/interfaces/msg/_bridge_status_s.c
+[1.662s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/lib/python3.12/site-packages/interfaces/msg/__init__.py
+[1.662s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/lib/python3.12/site-packages/interfaces/msg/_safety_status_s.c
+[1.662s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/lib/python3.12/site-packages/interfaces/msg/_vehicle_status.py
+[1.662s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/lib/python3.12/site-packages/interfaces/interfaces_s__rosidl_typesupport_introspection_c.so
+[1.662s] -- Installing: /home/ahmed/colcon_ws/install/interfaces/lib/python3.12/site-packages/interfaces/__init__.py
+[1.662s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/lib/python3.12/site-packages/interfaces/interfaces_s__rosidl_typesupport_c.so
+[1.662s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/lib/python3.12/site-packages/interfaces/interfaces_s__rosidl_typesupport_fastrtps_c.so
+[1.696s] Listing '/home/ahmed/colcon_ws/install/interfaces/lib/python3.12/site-packages/interfaces'...
+[1.696s] Compiling '/home/ahmed/colcon_ws/install/interfaces/lib/python3.12/site-packages/interfaces/__init__.py'...
+[1.696s] Listing '/home/ahmed/colcon_ws/install/interfaces/lib/python3.12/site-packages/interfaces/msg'...
+[1.701s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/lib/python3.12/site-packages/interfaces/interfaces_s__rosidl_typesupport_fastrtps_c.so
+[1.702s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/lib/python3.12/site-packages/interfaces/interfaces_s__rosidl_typesupport_introspection_c.so
+[1.702s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/lib/python3.12/site-packages/interfaces/interfaces_s__rosidl_typesupport_c.so
+[1.702s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/lib/libinterfaces__rosidl_generator_py.so
+[1.702s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/share/interfaces/msg/VehicleStatus.idl
+[1.702s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/share/interfaces/msg/SafetyStatus.idl
+[1.702s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/share/interfaces/msg/BridgeStatus.idl
+[1.702s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/share/interfaces/msg/VehicleStatus.msg
+[1.703s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/share/interfaces/msg/SafetyStatus.msg
+[1.703s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/share/interfaces/msg/BridgeStatus.msg
+[1.703s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/share/ament_index/resource_index/package_run_dependencies/interfaces
+[1.703s] -- Installing: /home/ahmed/colcon_ws/install/interfaces/share/ament_index/resource_index/parent_prefix_path/interfaces
+[1.703s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/share/interfaces/environment/ament_prefix_path.sh
+[1.703s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/share/interfaces/environment/ament_prefix_path.dsv
+[1.703s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/share/interfaces/environment/path.sh
+[1.703s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/share/interfaces/environment/path.dsv
+[1.703s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/share/interfaces/local_setup.bash
+[1.703s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/share/interfaces/local_setup.sh
+[1.704s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/share/interfaces/local_setup.zsh
+[1.704s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/share/interfaces/local_setup.dsv
+[1.704s] -- Installing: /home/ahmed/colcon_ws/install/interfaces/share/interfaces/package.dsv
+[1.704s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/share/ament_index/resource_index/packages/interfaces
+[1.704s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_generator_cExport.cmake
+[1.704s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_generator_cExport-noconfig.cmake
+[1.704s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[1.704s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[1.704s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_introspection_cExport.cmake
+[1.704s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[1.704s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_cExport.cmake
+[1.704s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[1.704s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_generator_cppExport.cmake
+[1.705s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[1.705s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[1.705s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[1.705s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[1.705s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_cppExport.cmake
+[1.705s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[1.705s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_generator_pyExport.cmake
+[1.705s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[1.705s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/share/interfaces/cmake/rosidl_cmake-extras.cmake
+[1.705s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/share/interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.705s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/share/interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.705s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/share/interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[1.705s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/share/interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[1.705s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/share/interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[1.706s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/share/interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[1.706s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/share/interfaces/cmake/interfacesConfig.cmake
+[1.706s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/share/interfaces/cmake/interfacesConfig-version.cmake
+[1.706s] -- Up-to-date: /home/ahmed/colcon_ws/install/interfaces/share/interfaces/package.xml
+[1.707s] Invoked command in '/home/ahmed/colcon_ws/build/interfaces' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ahmed/colcon_ws/build/interfaces

@@ -1,0 +1,17 @@
+[1.320s] Invoking command in '/home/ahmed/colcon_ws/build/planning': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ahmed/colcon_ws/build/planning/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ahmed/colcon_ws/install/planning/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ahmed/colcon_ws/build/planning/build --no-deps symlink_data
+[1.683s] running develop
+[1.914s] running egg_info
+[1.936s] writing planning.egg-info/PKG-INFO
+[1.936s] writing dependency_links to planning.egg-info/dependency_links.txt
+[1.937s] writing entry points to planning.egg-info/entry_points.txt
+[1.937s] writing requirements to planning.egg-info/requires.txt
+[1.937s] writing top-level names to planning.egg-info/top_level.txt
+[1.983s] reading manifest file 'planning.egg-info/SOURCES.txt'
+[1.983s] writing manifest file 'planning.egg-info/SOURCES.txt'
+[2.007s] running build_ext
+[2.007s] Creating /home/ahmed/colcon_ws/install/planning/lib/python3.12/site-packages/planning.egg-link (link to .)
+[2.007s] Installing planning_node script to /home/ahmed/colcon_ws/install/planning/lib/planning
+[2.008s] 
+[2.008s] Installed /home/ahmed/colcon_ws/build/planning
+[2.008s] running symlink_data
+[2.035s] Invoked command in '/home/ahmed/colcon_ws/build/planning' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ahmed/colcon_ws/build/planning/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ahmed/colcon_ws/install/planning/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ahmed/colcon_ws/build/planning/build --no-deps symlink_data

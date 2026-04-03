@@ -3,6 +3,7 @@ setup.cfg
 setup.py
 perception/__init__.py
 perception/cone_detector.py
+perception/lidar_perception_node.py
 perception/perception_node.py
 perception.egg-info/PKG-INFO
 perception.egg-info/SOURCES.txt
@@ -11,4 +12,5 @@ perception.egg-info/entry_points.txt
 perception.egg-info/requires.txt
 perception.egg-info/top_level.txt
 perception.egg-info/zip-safe
+perception/config/lidar_perception.yaml
 resource/perception

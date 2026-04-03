@@ -1,0 +1,8 @@
+{
+  "package_name": "interfaces",
+  "non_idl_tuples": [
+    "/home/ahmed/colcon_ws/src/interfaces:msg/VehicleStatus.msg",
+    "/home/ahmed/colcon_ws/src/interfaces:msg/SafetyStatus.msg",
+    "/home/ahmed/colcon_ws/src/interfaces:msg/BridgeStatus.msg"
+  ]
+}

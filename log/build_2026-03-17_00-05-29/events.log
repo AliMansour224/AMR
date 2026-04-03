@@ -1,0 +1,340 @@
+[0.000000] (-) TimerEvent: {}
+[0.000183] (-) JobUnselected: {'identifier': 'autonomy'}
+[0.000216] (-) JobUnselected: {'identifier': 'control'}
+[0.000237] (-) JobUnselected: {'identifier': 'localization'}
+[0.000253] (-) JobUnselected: {'identifier': 'perception'}
+[0.000268] (-) JobUnselected: {'identifier': 'planning'}
+[0.000282] (-) JobUnselected: {'identifier': 'safety'}
+[0.000295] (-) JobUnselected: {'identifier': 'sensor_drivers'}
+[0.000309] (-) JobUnselected: {'identifier': 'simulation'}
+[0.000322] (-) JobUnselected: {'identifier': 'vehicle_interface'}
+[0.000337] (autonomy_msgs) JobQueued: {'identifier': 'autonomy_msgs', 'dependencies': OrderedDict()}
+[0.000355] (autonomy_msgs) JobStarted: {'identifier': 'autonomy_msgs'}
+[0.006825] (autonomy_msgs) JobProgress: {'identifier': 'autonomy_msgs', 'progress': 'cmake'}
+[0.007082] (autonomy_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/ahmed/colcon_ws/src/autonomy_msgs', '-DCATKIN_INSTALL_INTO_PREFIX_ROOT=0', '-DCMAKE_INSTALL_PREFIX=/home/ahmed/colcon_ws/install/autonomy_msgs'], 'cwd': '/home/ahmed/colcon_ws/build/autonomy_msgs', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'XDG_ACTIVATION_TOKEN': 'gnome-shell/Terminator/2617-4-ahmed-G3-3500_TIME1430208', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'ahmed', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ahmed', 'OLDPWD': '/home/ahmed/colcon_ws', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/terminator.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '2178', 'SYSTEMD_EXEC_PID': '2617', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '7711', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ahmed', 'JOURNAL_STREAM': '9:21747', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'ahmed', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/ahmed-G3-3500:@/tmp/.ICE-unix/2574,unix/ahmed-G3-3500:/tmp/.ICE-unix/2574', 'INVOCATION_ID': '9ab09096e88d4921ab5b6b4db085d651', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:e041b889-3838-40cb-8ad4-c8f5143b1266', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/ahmed/colcon_ws/build/autonomy_msgs', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}), 'shell': False}
+[0.054065] (autonomy_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.099313] (-) TimerEvent: {}
+[0.103214] (autonomy_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.116131] (autonomy_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.189881] (autonomy_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.199428] (-) TimerEvent: {}
+[0.200726] (autonomy_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.200990] (autonomy_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.201500] (autonomy_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.210689] (autonomy_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.293479] (autonomy_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.299504] (-) TimerEvent: {}
+[0.304471] (autonomy_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.304842] (autonomy_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.305289] (autonomy_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.308967] (autonomy_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.399622] (-) TimerEvent: {}
+[0.447721] (autonomy_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[0.499739] (-) TimerEvent: {}
+[0.556073] (autonomy_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[0.562975] (autonomy_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.599861] (-) TimerEvent: {}
+[0.624948] (autonomy_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.674293] (autonomy_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.7 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[0.678235] (autonomy_msgs) StdoutLine: {'line': b'-- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)\n'}
+[0.699942] (-) TimerEvent: {}
+[0.716750] (autonomy_msgs) StdoutLine: {'line': b'-- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)\n'}
+[0.800056] (-) TimerEvent: {}
+[0.900255] (-) TimerEvent: {}
+[1.000523] (-) TimerEvent: {}
+[1.100749] (-) TimerEvent: {}
+[1.200970] (-) TimerEvent: {}
+[1.301191] (-) TimerEvent: {}
+[1.310671] (autonomy_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)\n'}
+[1.401313] (-) TimerEvent: {}
+[1.501557] (-) TimerEvent: {}
+[1.601744] (-) TimerEvent: {}
+[1.701937] (-) TimerEvent: {}
+[1.780973] (autonomy_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.802051] (-) TimerEvent: {}
+[1.902274] (-) TimerEvent: {}
+[2.002440] (-) TimerEvent: {}
+[2.102707] (-) TimerEvent: {}
+[2.202893] (-) TimerEvent: {}
+[2.303117] (-) TimerEvent: {}
+[2.399184] (autonomy_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.403079] (autonomy_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)\n'}
+[2.403223] (-) TimerEvent: {}
+[2.503420] (-) TimerEvent: {}
+[2.524477] (autonomy_msgs) StdoutLine: {'line': b'-- Found PythonExtra: /usr/bin/python3  \n'}
+[2.603469] (-) TimerEvent: {}
+[2.703656] (-) TimerEvent: {}
+[2.803846] (-) TimerEvent: {}
+[2.904033] (-) TimerEvent: {}
+[2.920265] (autonomy_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed \n'}
+[2.985009] (autonomy_msgs) StdoutLine: {'line': b'-- Configuring done (3.0s)\n'}
+[3.004156] (-) TimerEvent: {}
+[3.021597] (autonomy_msgs) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[3.023694] (autonomy_msgs) StderrLine: {'line': b'\x1b[33mCMake Warning:\n'}
+[3.023842] (autonomy_msgs) StderrLine: {'line': b'  Manually-specified variables were not used by the project:\n'}
+[3.023941] (autonomy_msgs) StderrLine: {'line': b'\n'}
+[3.024023] (autonomy_msgs) StderrLine: {'line': b'    CATKIN_INSTALL_INTO_PREFIX_ROOT\n'}
+[3.024104] (autonomy_msgs) StderrLine: {'line': b'\n'}
+[3.024215] (autonomy_msgs) StderrLine: {'line': b'\x1b[0m\n'}
+[3.033932] (autonomy_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/ahmed/colcon_ws/build/autonomy_msgs\n'}
+[3.039406] (autonomy_msgs) CommandEnded: {'returncode': 0}
+[3.039851] (autonomy_msgs) JobProgress: {'identifier': 'autonomy_msgs', 'progress': 'build'}
+[3.040623] (autonomy_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ahmed/colcon_ws/build/autonomy_msgs', '--', '-j12', '-l12'], 'cwd': '/home/ahmed/colcon_ws/build/autonomy_msgs', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'XDG_ACTIVATION_TOKEN': 'gnome-shell/Terminator/2617-4-ahmed-G3-3500_TIME1430208', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'ahmed', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ahmed', 'OLDPWD': '/home/ahmed/colcon_ws', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/terminator.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '2178', 'SYSTEMD_EXEC_PID': '2617', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '7711', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ahmed', 'JOURNAL_STREAM': '9:21747', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'ahmed', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/ahmed-G3-3500:@/tmp/.ICE-unix/2574,unix/ahmed-G3-3500:/tmp/.ICE-unix/2574', 'INVOCATION_ID': '9ab09096e88d4921ab5b6b4db085d651', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:e041b889-3838-40cb-8ad4-c8f5143b1266', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/ahmed/colcon_ws/build/autonomy_msgs', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}), 'shell': False}
+[3.084220] (autonomy_msgs) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating type hashes for ROS interfaces\x1b[0m\n'}
+[3.091854] (autonomy_msgs) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_copy_autonomy_msgs\n'}
+[3.104271] (-) TimerEvent: {}
+[3.204457] (-) TimerEvent: {}
+[3.283964] (autonomy_msgs) StdoutLine: {'line': b'[  2%] Built target autonomy_msgs__rosidl_generator_type_description\n'}
+[3.293012] (autonomy_msgs) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[3.302010] (autonomy_msgs) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[3.304571] (-) TimerEvent: {}
+[3.317863] (autonomy_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[3.318781] (autonomy_msgs) StdoutLine: {'line': b'creating autonomy_msgs.egg-info\n'}
+[3.341869] (autonomy_msgs) StdoutLine: {'line': b'writing autonomy_msgs.egg-info/PKG-INFO\n'}
+[3.342120] (autonomy_msgs) StdoutLine: {'line': b'writing dependency_links to autonomy_msgs.egg-info/dependency_links.txt\n'}
+[3.342287] (autonomy_msgs) StdoutLine: {'line': b'writing top-level names to autonomy_msgs.egg-info/top_level.txt\n'}
+[3.342373] (autonomy_msgs) StdoutLine: {'line': b"writing manifest file 'autonomy_msgs.egg-info/SOURCES.txt'\n"}
+[3.404685] (-) TimerEvent: {}
+[3.411047] (autonomy_msgs) StdoutLine: {'line': b"reading manifest file 'autonomy_msgs.egg-info/SOURCES.txt'\n"}
+[3.411555] (autonomy_msgs) StdoutLine: {'line': b"writing manifest file 'autonomy_msgs.egg-info/SOURCES.txt'\n"}
+[3.434739] (autonomy_msgs) StdoutLine: {'line': b'[  6%] Built target ament_cmake_python_build_autonomy_msgs_egg\n'}
+[3.504802] (-) TimerEvent: {}
+[3.570389] (autonomy_msgs) StdoutLine: {'line': b'[  6%] Built target autonomy_msgs__cpp\n'}
+[3.604895] (-) TimerEvent: {}
+[3.615162] (autonomy_msgs) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding C object CMakeFiles/autonomy_msgs__rosidl_generator_c.dir/rosidl_generator_c/autonomy_msgs/msg/detail/detection__type_support.c.o\x1b[0m\n'}
+[3.615484] (autonomy_msgs) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding C object CMakeFiles/autonomy_msgs__rosidl_generator_c.dir/rosidl_generator_c/autonomy_msgs/msg/detail/detection__description.c.o\x1b[0m\n'}
+[3.615637] (autonomy_msgs) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding C object CMakeFiles/autonomy_msgs__rosidl_generator_c.dir/rosidl_generator_c/autonomy_msgs/msg/detail/detection_array__description.c.o\x1b[0m\n'}
+[3.615760] (autonomy_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding C object CMakeFiles/autonomy_msgs__rosidl_generator_c.dir/rosidl_generator_c/autonomy_msgs/msg/detail/detection_array__functions.c.o\x1b[0m\n'}
+[3.615880] (autonomy_msgs) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding C object CMakeFiles/autonomy_msgs__rosidl_generator_c.dir/rosidl_generator_c/autonomy_msgs/msg/detail/detection__functions.c.o\x1b[0m\n'}
+[3.616000] (autonomy_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding C object CMakeFiles/autonomy_msgs__rosidl_generator_c.dir/rosidl_generator_c/autonomy_msgs/msg/detail/detection_array__type_support.c.o\x1b[0m\n'}
+[3.662024] (autonomy_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32m\x1b[1mLinking C shared library libautonomy_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[3.695366] (autonomy_msgs) StdoutLine: {'line': b'[ 22%] Built target autonomy_msgs__rosidl_generator_c\n'}
+[3.704761] (autonomy_msgs) StdoutLine: {'line': b'[ 36%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.704999] (-) TimerEvent: {}
+[3.705101] (autonomy_msgs) StdoutLine: {'line': b'[ 36%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[3.705244] (autonomy_msgs) StdoutLine: {'line': b'[ 36%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[3.705378] (autonomy_msgs) StdoutLine: {'line': b'[ 36%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[3.705518] (autonomy_msgs) StdoutLine: {'line': b'[ 36%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[3.705646] (autonomy_msgs) StdoutLine: {'line': b'[ 36%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.805094] (-) TimerEvent: {}
+[3.905340] (-) TimerEvent: {}
+[3.942775] (autonomy_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/autonomy_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/autonomy_msgs/msg/detection__type_support.cpp.o\x1b[0m\n'}
+[3.945173] (autonomy_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/autonomy_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/autonomy_msgs/msg/detection_array__type_support.cpp.o\x1b[0m\n'}
+[3.945496] (autonomy_msgs) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/autonomy_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/autonomy_msgs/msg/detection__type_support.cpp.o\x1b[0m\n'}
+[3.945830] (autonomy_msgs) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/autonomy_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/autonomy_msgs/msg/detection_array__type_support.cpp.o\x1b[0m\n'}
+[3.972098] (autonomy_msgs) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/autonomy_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/autonomy_msgs/msg/detail/detection__type_support.cpp.o\x1b[0m\n'}
+[3.972370] (autonomy_msgs) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/autonomy_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/autonomy_msgs/msg/detail/detection_array__type_support.cpp.o\x1b[0m\n'}
+[3.980427] (autonomy_msgs) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding C object CMakeFiles/autonomy_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autonomy_msgs/msg/detail/detection__type_support.c.o\x1b[0m\n'}
+[3.981610] (autonomy_msgs) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding C object CMakeFiles/autonomy_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autonomy_msgs/msg/detail/detection_array__type_support.c.o\x1b[0m\n'}
+[4.004342] (autonomy_msgs) StdoutLine: {'line': b'[ 56%] \x1b[32m\x1b[1mLinking CXX shared library libautonomy_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[4.006307] (-) TimerEvent: {}
+[4.023086] (autonomy_msgs) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object CMakeFiles/autonomy_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/autonomy_msgs/msg/detail/dds_fastrtps/detection__type_support.cpp.o\x1b[0m\n'}
+[4.023922] (autonomy_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/autonomy_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/autonomy_msgs/msg/detail/dds_fastrtps/detection_array__type_support.cpp.o\x1b[0m\n'}
+[4.037669] (autonomy_msgs) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/autonomy_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autonomy_msgs/msg/detail/detection_array__type_support_c.cpp.o\x1b[0m\n'}
+[4.037953] (autonomy_msgs) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/autonomy_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autonomy_msgs/msg/detail/detection__type_support_c.cpp.o\x1b[0m\n'}
+[4.041252] (autonomy_msgs) StdoutLine: {'line': b'[ 68%] \x1b[32m\x1b[1mLinking C shared library libautonomy_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[4.053308] (autonomy_msgs) StdoutLine: {'line': b'[ 68%] Built target autonomy_msgs__rosidl_typesupport_c\n'}
+[4.084657] (autonomy_msgs) StdoutLine: {'line': b'[ 68%] Built target autonomy_msgs__rosidl_typesupport_introspection_c\n'}
+[4.106426] (-) TimerEvent: {}
+[4.206715] (-) TimerEvent: {}
+[4.307001] (-) TimerEvent: {}
+[4.407287] (-) TimerEvent: {}
+[4.427806] (autonomy_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libautonomy_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[4.450063] (autonomy_msgs) StdoutLine: {'line': b'[ 72%] \x1b[32m\x1b[1mLinking CXX shared library libautonomy_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[4.467423] (autonomy_msgs) StdoutLine: {'line': b'[ 72%] Built target autonomy_msgs__rosidl_typesupport_cpp\n'}
+[4.507430] (-) TimerEvent: {}
+[4.523349] (autonomy_msgs) StdoutLine: {'line': b'[ 72%] Built target autonomy_msgs__rosidl_typesupport_introspection_cpp\n'}
+[4.543782] (autonomy_msgs) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX shared library libautonomy_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[4.607514] (-) TimerEvent: {}
+[4.609467] (autonomy_msgs) StdoutLine: {'line': b'[ 75%] Built target autonomy_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[4.654385] (autonomy_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32m\x1b[1mLinking CXX shared library libautonomy_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[4.707605] (-) TimerEvent: {}
+[4.715773] (autonomy_msgs) StdoutLine: {'line': b'[ 77%] Built target autonomy_msgs__rosidl_typesupport_fastrtps_c\n'}
+[4.733257] (autonomy_msgs) StdoutLine: {'line': b'[ 77%] Built target autonomy_msgs\n'}
+[4.751755] (autonomy_msgs) StdoutLine: {'line': b'[ 79%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[4.807685] (-) TimerEvent: {}
+[4.907875] (-) TimerEvent: {}
+[5.008059] (-) TimerEvent: {}
+[5.082429] (autonomy_msgs) StdoutLine: {'line': b'[ 79%] Built target autonomy_msgs__py\n'}
+[5.100000] (autonomy_msgs) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding C object CMakeFiles/autonomy_msgs__rosidl_generator_py.dir/rosidl_generator_py/autonomy_msgs/msg/_detection_array_s.c.o\x1b[0m\n'}
+[5.100172] (autonomy_msgs) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding C object CMakeFiles/autonomy_msgs__rosidl_generator_py.dir/rosidl_generator_py/autonomy_msgs/msg/_detection_s.c.o\x1b[0m\n'}
+[5.108149] (-) TimerEvent: {}
+[5.208349] (-) TimerEvent: {}
+[5.219138] (autonomy_msgs) StdoutLine: {'line': b'[ 86%] \x1b[32m\x1b[1mLinking C shared library libautonomy_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[5.257930] (autonomy_msgs) StdoutLine: {'line': b'[ 86%] Built target autonomy_msgs__rosidl_generator_py\n'}
+[5.276021] (autonomy_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/autonomy_msgs_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/autonomy_msgs/_autonomy_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[5.276216] (autonomy_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/autonomy_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/autonomy_msgs/_autonomy_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[5.276314] (autonomy_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/autonomy_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/autonomy_msgs/_autonomy_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[5.308486] (-) TimerEvent: {}
+[5.373056] (autonomy_msgs) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/autonomy_msgs/autonomy_msgs_s__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[5.373300] (autonomy_msgs) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/autonomy_msgs/autonomy_msgs_s__rosidl_typesupport_c.so\x1b[0m\n'}
+[5.375059] (autonomy_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/autonomy_msgs/autonomy_msgs_s__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[5.401350] (autonomy_msgs) StdoutLine: {'line': b'[100%] Built target autonomy_msgs_s__rosidl_typesupport_introspection_c\n'}
+[5.401622] (autonomy_msgs) StdoutLine: {'line': b'[100%] Built target autonomy_msgs_s__rosidl_typesupport_c\n'}
+[5.403526] (autonomy_msgs) StdoutLine: {'line': b'[100%] Built target autonomy_msgs_s__rosidl_typesupport_fastrtps_c\n'}
+[5.408563] (-) TimerEvent: {}
+[5.414124] (autonomy_msgs) CommandEnded: {'returncode': 0}
+[5.414953] (autonomy_msgs) JobProgress: {'identifier': 'autonomy_msgs', 'progress': 'install'}
+[5.422741] (autonomy_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ahmed/colcon_ws/build/autonomy_msgs'], 'cwd': '/home/ahmed/colcon_ws/build/autonomy_msgs', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'XDG_ACTIVATION_TOKEN': 'gnome-shell/Terminator/2617-4-ahmed-G3-3500_TIME1430208', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'ahmed', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ahmed', 'OLDPWD': '/home/ahmed/colcon_ws', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/terminator.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '2178', 'SYSTEMD_EXEC_PID': '2617', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '7711', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ahmed', 'JOURNAL_STREAM': '9:21747', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'ahmed', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/ahmed-G3-3500:@/tmp/.ICE-unix/2574,unix/ahmed-G3-3500:/tmp/.ICE-unix/2574', 'INVOCATION_ID': '9ab09096e88d4921ab5b6b4db085d651', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:e041b889-3838-40cb-8ad4-c8f5143b1266', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/ahmed/colcon_ws/build/autonomy_msgs', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}), 'shell': False}
+[5.429908] (autonomy_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[5.430087] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/share/ament_index/resource_index/rosidl_interfaces/autonomy_msgs\n'}
+[5.430310] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/share/autonomy_msgs/msg/Detection.json\n'}
+[5.430440] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/share/autonomy_msgs/msg/DetectionArray.json\n'}
+[5.430571] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/include/autonomy_msgs/autonomy_msgs\n'}
+[5.430703] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/include/autonomy_msgs/autonomy_msgs/msg\n'}
+[5.430830] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/include/autonomy_msgs/autonomy_msgs/msg/detail\n'}
+[5.430955] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/include/autonomy_msgs/autonomy_msgs/msg/detail/detection__type_support.h\n'}
+[5.431111] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/include/autonomy_msgs/autonomy_msgs/msg/detail/detection_array__description.c\n'}
+[5.431226] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/include/autonomy_msgs/autonomy_msgs/msg/detail/detection_array__type_support.h\n'}
+[5.431316] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/include/autonomy_msgs/autonomy_msgs/msg/detail/detection__struct.h\n'}
+[5.431411] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/include/autonomy_msgs/autonomy_msgs/msg/detail/detection__type_support.c\n'}
+[5.431526] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/include/autonomy_msgs/autonomy_msgs/msg/detail/detection_array__functions.c\n'}
+[5.431646] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/include/autonomy_msgs/autonomy_msgs/msg/detail/detection__functions.c\n'}
+[5.431739] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/include/autonomy_msgs/autonomy_msgs/msg/detail/detection__functions.h\n'}
+[5.431848] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/include/autonomy_msgs/autonomy_msgs/msg/detail/detection__description.c\n'}
+[5.431962] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/include/autonomy_msgs/autonomy_msgs/msg/detail/detection_array__functions.h\n'}
+[5.432049] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/include/autonomy_msgs/autonomy_msgs/msg/detail/detection_array__type_support.c\n'}
+[5.432160] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/include/autonomy_msgs/autonomy_msgs/msg/detail/detection_array__struct.h\n'}
+[5.432278] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/include/autonomy_msgs/autonomy_msgs/msg/detection.h\n'}
+[5.432368] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/include/autonomy_msgs/autonomy_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[5.432488] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/include/autonomy_msgs/autonomy_msgs/msg/detection_array.h\n'}
+[5.432602] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/share/autonomy_msgs/environment/library_path.sh\n'}
+[5.432707] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/share/autonomy_msgs/environment/library_path.dsv\n'}
+[5.432812] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/lib/libautonomy_msgs__rosidl_generator_c.so\n'}
+[5.433084] (autonomy_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ahmed/colcon_ws/install/autonomy_msgs/lib/libautonomy_msgs__rosidl_generator_c.so" to ""\n'}
+[5.433203] (autonomy_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ahmed/colcon_ws/install/autonomy_msgs/include/autonomy_msgs/autonomy_msgs\n'}
+[5.433321] (autonomy_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ahmed/colcon_ws/install/autonomy_msgs/include/autonomy_msgs/autonomy_msgs/msg\n'}
+[5.433438] (autonomy_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ahmed/colcon_ws/install/autonomy_msgs/include/autonomy_msgs/autonomy_msgs/msg/detail\n'}
+[5.433525] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/include/autonomy_msgs/autonomy_msgs/msg/detail/detection_array__rosidl_typesupport_fastrtps_c.h\n'}
+[5.433611] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/include/autonomy_msgs/autonomy_msgs/msg/detail/detection__rosidl_typesupport_fastrtps_c.h\n'}
+[5.433738] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/include/autonomy_msgs/autonomy_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[5.433853] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/lib/libautonomy_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[5.433957] (autonomy_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ahmed/colcon_ws/install/autonomy_msgs/lib/libautonomy_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[5.434065] (autonomy_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ahmed/colcon_ws/install/autonomy_msgs/include/autonomy_msgs/autonomy_msgs\n'}
+[5.434181] (autonomy_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ahmed/colcon_ws/install/autonomy_msgs/include/autonomy_msgs/autonomy_msgs/msg\n'}
+[5.434270] (autonomy_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ahmed/colcon_ws/install/autonomy_msgs/include/autonomy_msgs/autonomy_msgs/msg/detail\n'}
+[5.434380] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/include/autonomy_msgs/autonomy_msgs/msg/detail/detection__rosidl_typesupport_introspection_c.h\n'}
+[5.434517] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/include/autonomy_msgs/autonomy_msgs/msg/detail/detection_array__rosidl_typesupport_introspection_c.h\n'}
+[5.434625] (autonomy_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ahmed/colcon_ws/install/autonomy_msgs/include/autonomy_msgs/autonomy_msgs/msg/detail/detection__type_support.c\n'}
+[5.434710] (autonomy_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ahmed/colcon_ws/install/autonomy_msgs/include/autonomy_msgs/autonomy_msgs/msg/detail/detection_array__type_support.c\n'}
+[5.434794] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/include/autonomy_msgs/autonomy_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[5.434904] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/lib/libautonomy_msgs__rosidl_typesupport_introspection_c.so\n'}
+[5.434988] (autonomy_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ahmed/colcon_ws/install/autonomy_msgs/lib/libautonomy_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[5.435065] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/lib/libautonomy_msgs__rosidl_typesupport_c.so\n'}
+[5.435184] (autonomy_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ahmed/colcon_ws/install/autonomy_msgs/lib/libautonomy_msgs__rosidl_typesupport_c.so" to ""\n'}
+[5.435266] (autonomy_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ahmed/colcon_ws/install/autonomy_msgs/include/autonomy_msgs/autonomy_msgs\n'}
+[5.435353] (autonomy_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ahmed/colcon_ws/install/autonomy_msgs/include/autonomy_msgs/autonomy_msgs/msg\n'}
+[5.435475] (autonomy_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ahmed/colcon_ws/install/autonomy_msgs/include/autonomy_msgs/autonomy_msgs/msg/detail\n'}
+[5.435596] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/include/autonomy_msgs/autonomy_msgs/msg/detail/detection__struct.hpp\n'}
+[5.435685] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/include/autonomy_msgs/autonomy_msgs/msg/detail/detection__type_support.hpp\n'}
+[5.435772] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/include/autonomy_msgs/autonomy_msgs/msg/detail/detection_array__type_support.hpp\n'}
+[5.435886] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/include/autonomy_msgs/autonomy_msgs/msg/detail/detection_array__struct.hpp\n'}
+[5.436032] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/include/autonomy_msgs/autonomy_msgs/msg/detail/detection__builder.hpp\n'}
+[5.436206] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/include/autonomy_msgs/autonomy_msgs/msg/detail/detection_array__traits.hpp\n'}
+[5.436403] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/include/autonomy_msgs/autonomy_msgs/msg/detail/detection__traits.hpp\n'}
+[5.436585] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/include/autonomy_msgs/autonomy_msgs/msg/detail/detection_array__builder.hpp\n'}
+[5.436727] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/include/autonomy_msgs/autonomy_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[5.436862] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/include/autonomy_msgs/autonomy_msgs/msg/detection.hpp\n'}
+[5.436969] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/include/autonomy_msgs/autonomy_msgs/msg/detection_array.hpp\n'}
+[5.437055] (autonomy_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ahmed/colcon_ws/install/autonomy_msgs/include/autonomy_msgs/autonomy_msgs\n'}
+[5.437137] (autonomy_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ahmed/colcon_ws/install/autonomy_msgs/include/autonomy_msgs/autonomy_msgs/msg\n'}
+[5.437232] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/include/autonomy_msgs/autonomy_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[5.437360] (autonomy_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ahmed/colcon_ws/install/autonomy_msgs/include/autonomy_msgs/autonomy_msgs/msg/detail\n'}
+[5.437465] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/include/autonomy_msgs/autonomy_msgs/msg/detail/dds_fastrtps\n'}
+[5.437564] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/include/autonomy_msgs/autonomy_msgs/msg/detail/detection_array__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.437661] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/include/autonomy_msgs/autonomy_msgs/msg/detail/detection__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.437747] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/lib/libautonomy_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[5.437850] (autonomy_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ahmed/colcon_ws/install/autonomy_msgs/lib/libautonomy_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[5.437936] (autonomy_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ahmed/colcon_ws/install/autonomy_msgs/include/autonomy_msgs/autonomy_msgs\n'}
+[5.438043] (autonomy_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ahmed/colcon_ws/install/autonomy_msgs/include/autonomy_msgs/autonomy_msgs/msg\n'}
+[5.438131] (autonomy_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ahmed/colcon_ws/install/autonomy_msgs/include/autonomy_msgs/autonomy_msgs/msg/detail\n'}
+[5.438240] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/include/autonomy_msgs/autonomy_msgs/msg/detail/detection__type_support.cpp\n'}
+[5.438356] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/include/autonomy_msgs/autonomy_msgs/msg/detail/detection__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.438467] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/include/autonomy_msgs/autonomy_msgs/msg/detail/detection_array__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.438567] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/include/autonomy_msgs/autonomy_msgs/msg/detail/detection_array__type_support.cpp\n'}
+[5.438664] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/lib/libautonomy_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[5.438763] (autonomy_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ahmed/colcon_ws/install/autonomy_msgs/lib/libautonomy_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[5.438884] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/lib/libautonomy_msgs__rosidl_typesupport_cpp.so\n'}
+[5.438996] (autonomy_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ahmed/colcon_ws/install/autonomy_msgs/lib/libautonomy_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[5.439093] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/share/autonomy_msgs/environment/pythonpath.sh\n'}
+[5.439210] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/share/autonomy_msgs/environment/pythonpath.dsv\n'}
+[5.439305] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/lib/python3.12/site-packages/autonomy_msgs-0.0.0-py3.12.egg-info\n'}
+[5.439407] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/lib/python3.12/site-packages/autonomy_msgs-0.0.0-py3.12.egg-info/top_level.txt\n'}
+[5.439525] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/lib/python3.12/site-packages/autonomy_msgs-0.0.0-py3.12.egg-info/SOURCES.txt\n'}
+[5.439625] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/lib/python3.12/site-packages/autonomy_msgs-0.0.0-py3.12.egg-info/dependency_links.txt\n'}
+[5.439723] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/lib/python3.12/site-packages/autonomy_msgs-0.0.0-py3.12.egg-info/PKG-INFO\n'}
+[5.439829] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/lib/python3.12/site-packages/autonomy_msgs\n'}
+[5.439926] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/lib/python3.12/site-packages/autonomy_msgs/_autonomy_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[5.440023] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/lib/python3.12/site-packages/autonomy_msgs/autonomy_msgs_s__rosidl_typesupport_c.so\n'}
+[5.440125] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/lib/python3.12/site-packages/autonomy_msgs/_autonomy_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[5.440211] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/lib/python3.12/site-packages/autonomy_msgs/_autonomy_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[5.440285] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/lib/python3.12/site-packages/autonomy_msgs/msg\n'}
+[5.440358] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/lib/python3.12/site-packages/autonomy_msgs/msg/_detection.py\n'}
+[5.440442] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/lib/python3.12/site-packages/autonomy_msgs/msg/_detection_array_s.c\n'}
+[5.440517] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/lib/python3.12/site-packages/autonomy_msgs/msg/_detection_s.c\n'}
+[5.440590] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/lib/python3.12/site-packages/autonomy_msgs/msg/__init__.py\n'}
+[5.440662] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/lib/python3.12/site-packages/autonomy_msgs/msg/_detection_array.py\n'}
+[5.440734] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/lib/python3.12/site-packages/autonomy_msgs/__init__.py\n'}
+[5.440810] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/lib/python3.12/site-packages/autonomy_msgs/autonomy_msgs_s__rosidl_typesupport_fastrtps_c.so\n'}
+[5.440883] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/lib/python3.12/site-packages/autonomy_msgs/autonomy_msgs_s__rosidl_typesupport_introspection_c.so\n'}
+[5.476978] (autonomy_msgs) StdoutLine: {'line': b"Listing '/home/ahmed/colcon_ws/install/autonomy_msgs/lib/python3.12/site-packages/autonomy_msgs'...\n"}
+[5.477137] (autonomy_msgs) StdoutLine: {'line': b"Compiling '/home/ahmed/colcon_ws/install/autonomy_msgs/lib/python3.12/site-packages/autonomy_msgs/__init__.py'...\n"}
+[5.477224] (autonomy_msgs) StdoutLine: {'line': b"Listing '/home/ahmed/colcon_ws/install/autonomy_msgs/lib/python3.12/site-packages/autonomy_msgs/msg'...\n"}
+[5.477302] (autonomy_msgs) StdoutLine: {'line': b"Compiling '/home/ahmed/colcon_ws/install/autonomy_msgs/lib/python3.12/site-packages/autonomy_msgs/msg/__init__.py'...\n"}
+[5.477378] (autonomy_msgs) StdoutLine: {'line': b"Compiling '/home/ahmed/colcon_ws/install/autonomy_msgs/lib/python3.12/site-packages/autonomy_msgs/msg/_detection.py'...\n"}
+[5.477476] (autonomy_msgs) StdoutLine: {'line': b"Compiling '/home/ahmed/colcon_ws/install/autonomy_msgs/lib/python3.12/site-packages/autonomy_msgs/msg/_detection_array.py'...\n"}
+[5.482457] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/lib/python3.12/site-packages/autonomy_msgs/autonomy_msgs_s__rosidl_typesupport_fastrtps_c.so\n'}
+[5.482642] (autonomy_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ahmed/colcon_ws/install/autonomy_msgs/lib/python3.12/site-packages/autonomy_msgs/autonomy_msgs_s__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[5.482807] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/lib/python3.12/site-packages/autonomy_msgs/autonomy_msgs_s__rosidl_typesupport_introspection_c.so\n'}
+[5.483040] (autonomy_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ahmed/colcon_ws/install/autonomy_msgs/lib/python3.12/site-packages/autonomy_msgs/autonomy_msgs_s__rosidl_typesupport_introspection_c.so" to ""\n'}
+[5.483187] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/lib/python3.12/site-packages/autonomy_msgs/autonomy_msgs_s__rosidl_typesupport_c.so\n'}
+[5.483385] (autonomy_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ahmed/colcon_ws/install/autonomy_msgs/lib/python3.12/site-packages/autonomy_msgs/autonomy_msgs_s__rosidl_typesupport_c.so" to ""\n'}
+[5.483518] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/lib/libautonomy_msgs__rosidl_generator_py.so\n'}
+[5.483699] (autonomy_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ahmed/colcon_ws/install/autonomy_msgs/lib/libautonomy_msgs__rosidl_generator_py.so" to ""\n'}
+[5.483835] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/share/autonomy_msgs/msg/Detection.idl\n'}
+[5.483954] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/share/autonomy_msgs/msg/DetectionArray.idl\n'}
+[5.484055] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/share/autonomy_msgs/msg/Detection.msg\n'}
+[5.484141] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/share/autonomy_msgs/msg/DetectionArray.msg\n'}
+[5.484266] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/share/ament_index/resource_index/package_run_dependencies/autonomy_msgs\n'}
+[5.484378] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/share/ament_index/resource_index/parent_prefix_path/autonomy_msgs\n'}
+[5.484503] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/share/autonomy_msgs/environment/ament_prefix_path.sh\n'}
+[5.484632] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/share/autonomy_msgs/environment/ament_prefix_path.dsv\n'}
+[5.484752] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/share/autonomy_msgs/environment/path.sh\n'}
+[5.484880] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/share/autonomy_msgs/environment/path.dsv\n'}
+[5.485009] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/share/autonomy_msgs/local_setup.bash\n'}
+[5.485123] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/share/autonomy_msgs/local_setup.sh\n'}
+[5.485247] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/share/autonomy_msgs/local_setup.zsh\n'}
+[5.485371] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/share/autonomy_msgs/local_setup.dsv\n'}
+[5.485505] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/share/autonomy_msgs/package.dsv\n'}
+[5.485623] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/share/ament_index/resource_index/packages/autonomy_msgs\n'}
+[5.485753] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/share/autonomy_msgs/cmake/export_autonomy_msgs__rosidl_generator_cExport.cmake\n'}
+[5.485883] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/share/autonomy_msgs/cmake/export_autonomy_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[5.486023] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/share/autonomy_msgs/cmake/export_autonomy_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[5.486138] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/share/autonomy_msgs/cmake/export_autonomy_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[5.486272] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/share/autonomy_msgs/cmake/autonomy_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[5.486403] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/share/autonomy_msgs/cmake/autonomy_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[5.486537] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/share/autonomy_msgs/cmake/autonomy_msgs__rosidl_typesupport_cExport.cmake\n'}
+[5.486656] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/share/autonomy_msgs/cmake/autonomy_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[5.486791] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/share/autonomy_msgs/cmake/export_autonomy_msgs__rosidl_generator_cppExport.cmake\n'}
+[5.486922] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/share/autonomy_msgs/cmake/export_autonomy_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[5.487042] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/share/autonomy_msgs/cmake/export_autonomy_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[5.487174] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/share/autonomy_msgs/cmake/autonomy_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[5.487294] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/share/autonomy_msgs/cmake/autonomy_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[5.487433] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/share/autonomy_msgs/cmake/autonomy_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[5.487554] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/share/autonomy_msgs/cmake/autonomy_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[5.487683] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/share/autonomy_msgs/cmake/export_autonomy_msgs__rosidl_generator_pyExport.cmake\n'}
+[5.487803] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/share/autonomy_msgs/cmake/export_autonomy_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[5.487921] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/share/autonomy_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[5.488038] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/share/autonomy_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[5.488156] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/share/autonomy_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[5.488272] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/share/autonomy_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[5.488392] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/share/autonomy_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[5.488513] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/share/autonomy_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[5.488640] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/share/autonomy_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[5.488765] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/share/autonomy_msgs/cmake/autonomy_msgsConfig.cmake\n'}
+[5.488875] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/share/autonomy_msgs/cmake/autonomy_msgsConfig-version.cmake\n'}
+[5.488998] (autonomy_msgs) StdoutLine: {'line': b'-- Installing: /home/ahmed/colcon_ws/install/autonomy_msgs/share/autonomy_msgs/package.xml\n'}
+[5.490507] (autonomy_msgs) CommandEnded: {'returncode': 0}
+[5.508648] (-) TimerEvent: {}
+[5.509666] (autonomy_msgs) JobEnded: {'identifier': 'autonomy_msgs', 'rc': 0}
+[5.510246] (-) EventReactorShutdown: {}

@@ -1,0 +1,24 @@
+[0.910s] Invoking command in '/home/ahmed/colcon_ws/build/bridge': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ahmed/colcon_ws/build/bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ahmed/colcon_ws/install/bridge/lib/python3.12/site-packages:/home/ahmed/colcon_ws/install/interfaces/lib/python3.12/site-packages:/home/ahmed/colcon_ws/build/simulation:/home/ahmed/colcon_ws/install/simulation/lib/python3.12/site-packages:/home/ahmed/colcon_ws/build/sensor_drivers:/home/ahmed/colcon_ws/install/sensor_drivers/lib/python3.12/site-packages:/home/ahmed/colcon_ws/build/planning:/home/ahmed/colcon_ws/install/planning/lib/python3.12/site-packages:/home/ahmed/colcon_ws/build/perception:/home/ahmed/colcon_ws/install/perception/lib/python3.12/site-packages:/home/ahmed/colcon_ws/install/bridge/lib/python3.12/site-packages:/home/ahmed/colcon_ws/build/control:/home/ahmed/colcon_ws/install/control/lib/python3.12/site-packages:/home/ahmed/colcon_ws/install/autonomy_msgs/lib/python3.12/site-packages:/home/ahmed/colcon_ws/build/autonomy:/home/ahmed/colcon_ws/install/autonomy/lib/python3.12/site-packages:/home/ahmed/install/simulation/lib/python3.12/site-packages:/home/ahmed/install/perception/lib/python3.12/site-packages:/home/ahmed/build/autonomy:/home/ahmed/install/autonomy/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ahmed/colcon_ws/build/bridge/build --no-deps symlink_data
+[1.281s] running develop
+[1.564s] running egg_info
+[1.564s] creating bridge.egg-info
+[1.588s] writing bridge.egg-info/PKG-INFO
+[1.588s] writing dependency_links to bridge.egg-info/dependency_links.txt
+[1.589s] writing entry points to bridge.egg-info/entry_points.txt
+[1.589s] writing requirements to bridge.egg-info/requires.txt
+[1.589s] writing top-level names to bridge.egg-info/top_level.txt
+[1.589s] writing manifest file 'bridge.egg-info/SOURCES.txt'
+[1.638s] reading manifest file 'bridge.egg-info/SOURCES.txt'
+[1.638s] writing manifest file 'bridge.egg-info/SOURCES.txt'
+[1.663s] running build_ext
+[1.663s] Creating /home/ahmed/colcon_ws/install/bridge/lib/python3.12/site-packages/bridge.egg-link (link to .)
+[1.664s] Installing bridge_node script to /home/ahmed/colcon_ws/install/bridge/lib/bridge
+[1.664s] 
+[1.664s] Installed /home/ahmed/colcon_ws/build/bridge
+[1.664s] running symlink_data
+[1.664s] creating /home/ahmed/colcon_ws/install/bridge/share/ament_index
+[1.664s] creating /home/ahmed/colcon_ws/install/bridge/share/ament_index/resource_index
+[1.664s] creating /home/ahmed/colcon_ws/install/bridge/share/ament_index/resource_index/packages
+[1.665s] symbolically linking /home/ahmed/colcon_ws/build/bridge/resource/bridge -> /home/ahmed/colcon_ws/install/bridge/share/ament_index/resource_index/packages
+[1.665s] symbolically linking /home/ahmed/colcon_ws/build/bridge/package.xml -> /home/ahmed/colcon_ws/install/bridge/share/bridge
+[1.690s] Invoked command in '/home/ahmed/colcon_ws/build/bridge' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ahmed/colcon_ws/build/bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ahmed/colcon_ws/install/bridge/lib/python3.12/site-packages:/home/ahmed/colcon_ws/install/interfaces/lib/python3.12/site-packages:/home/ahmed/colcon_ws/build/simulation:/home/ahmed/colcon_ws/install/simulation/lib/python3.12/site-packages:/home/ahmed/colcon_ws/build/sensor_drivers:/home/ahmed/colcon_ws/install/sensor_drivers/lib/python3.12/site-packages:/home/ahmed/colcon_ws/build/planning:/home/ahmed/colcon_ws/install/planning/lib/python3.12/site-packages:/home/ahmed/colcon_ws/build/perception:/home/ahmed/colcon_ws/install/perception/lib/python3.12/site-packages:/home/ahmed/colcon_ws/install/bridge/lib/python3.12/site-packages:/home/ahmed/colcon_ws/build/control:/home/ahmed/colcon_ws/install/control/lib/python3.12/site-packages:/home/ahmed/colcon_ws/install/autonomy_msgs/lib/python3.12/site-packages:/home/ahmed/colcon_ws/build/autonomy:/home/ahmed/colcon_ws/install/autonomy/lib/python3.12/site-packages:/home/ahmed/install/simulation/lib/python3.12/site-packages:/home/ahmed/install/perception/lib/python3.12/site-packages:/home/ahmed/build/autonomy:/home/ahmed/install/autonomy/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ahmed/colcon_ws/build/bridge/build --no-deps symlink_data

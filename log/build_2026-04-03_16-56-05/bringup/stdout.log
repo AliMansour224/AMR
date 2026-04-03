@@ -1,0 +1,22 @@
+running develop
+running egg_info
+creating bringup.egg-info
+writing bringup.egg-info/PKG-INFO
+writing dependency_links to bringup.egg-info/dependency_links.txt
+writing requirements to bringup.egg-info/requires.txt
+writing top-level names to bringup.egg-info/top_level.txt
+writing manifest file 'bringup.egg-info/SOURCES.txt'
+reading manifest file 'bringup.egg-info/SOURCES.txt'
+writing manifest file 'bringup.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/ahmed/colcon_ws/install/bringup/lib/python3.12/site-packages/bringup.egg-link (link to .)
+
+Installed /home/ahmed/colcon_ws/build/bringup
+running symlink_data
+creating /home/ahmed/colcon_ws/install/bringup/share/ament_index
+creating /home/ahmed/colcon_ws/install/bringup/share/ament_index/resource_index
+creating /home/ahmed/colcon_ws/install/bringup/share/ament_index/resource_index/packages
+symbolically linking /home/ahmed/colcon_ws/build/bringup/resource/bringup -> /home/ahmed/colcon_ws/install/bringup/share/ament_index/resource_index/packages
+symbolically linking /home/ahmed/colcon_ws/build/bringup/package.xml -> /home/ahmed/colcon_ws/install/bringup/share/bringup
+creating /home/ahmed/colcon_ws/install/bringup/share/bringup/launch
+symbolically linking /home/ahmed/colcon_ws/build/bringup/launch/sim_system.launch.py -> /home/ahmed/colcon_ws/install/bringup/share/bringup/launch

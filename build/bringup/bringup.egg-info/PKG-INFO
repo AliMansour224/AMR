@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: bringup
+Version: 0.0.1
+Summary: Top-level launch package for SparkX autonomy system modes.
+Maintainer: Ahmed
+Maintainer-email: ahmedlearningfinnish@gmail.com
+License: Apache-2.0

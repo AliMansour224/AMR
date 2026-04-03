@@ -1,0 +1,25 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from interfaces/msg/VehicleStatus.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module interfaces {
+  module msg {
+    struct VehicleStatus {
+      std_msgs::msg::Header header;
+
+      boolean enabled;
+
+      boolean estop_active;
+
+      float speed_mps;
+
+      float yaw_rate_rps;
+
+      uint8 fault_code;
+
+      string mode;
+    };
+  };
+};

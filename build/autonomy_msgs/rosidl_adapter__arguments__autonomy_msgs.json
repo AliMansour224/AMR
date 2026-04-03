@@ -1,0 +1,7 @@
+{
+  "package_name": "autonomy_msgs",
+  "non_idl_tuples": [
+    "/home/ahmed/colcon_ws/src/autonomy_msgs:msg/Detection.msg",
+    "/home/ahmed/colcon_ws/src/autonomy_msgs:msg/DetectionArray.msg"
+  ]
+}
