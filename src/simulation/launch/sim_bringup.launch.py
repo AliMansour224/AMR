@@ -1,7 +1,9 @@
 import os
 
 from launch import LaunchDescription
-from launch.actions import ExecuteProcess, SetEnvironmentVariable, TimerAction
+from launch.actions import ExecuteProcess, SetEnvironmentVariable, TimerAction, IncludeLaunchDescription
+from launch.launch_description_sources import PythonLaunchDescriptionSource
+from launch_ros.actions import Node
 from ament_index_python.packages import get_package_share_directory
 
 
@@ -10,27 +12,39 @@ def generate_launch_description():
     world_path = os.path.join(pkg_path, 'worlds', 'empty_world.sdf')
     sparkx_model_path = os.path.join(pkg_path, 'models', 'sparkx_car', 'model.sdf')
     models_path = os.path.join(pkg_path, 'models')
+    bridge_config_path = os.path.join(pkg_path, 'config', 'ros_gz_bridges.yaml')
+    rsp_launch_path = os.path.join(pkg_path, 'launch', 'rsp.launch.py')
+
+    gz_resource_path = models_path
+    if os.environ.get('GZ_SIM_RESOURCE_PATH'):
+        gz_resource_path = models_path + ':' + os.environ.get('GZ_SIM_RESOURCE_PATH')
 
     return LaunchDescription([
         SetEnvironmentVariable(
             name='GZ_SIM_RESOURCE_PATH',
-            value=models_path + ':' + os.environ.get('GZ_SIM_RESOURCE_PATH', '')
+            value=gz_resource_path
+        ),
+
+        IncludeLaunchDescription(
+            PythonLaunchDescriptionSource(rsp_launch_path),
+            launch_arguments={'use_sim_time': 'true'}.items()
         ),
 
         ExecuteProcess(
-            cmd=['gz', 'sim', '-r', world_path],
+            cmd=['gz', 'sim', '-r', '-v', '4', world_path],
             output='screen'
         ),
 
         TimerAction(
-            period=2.0,
+            period=6.0,
             actions=[
                 ExecuteProcess(
                     cmd=[
-                        'gz', 'service', '-s', '/world/empty/create',
+                        'gz', 'service',
+                        '-s', '/world/empty/create',
                         '--reqtype', 'gz.msgs.EntityFactory',
                         '--reptype', 'gz.msgs.Boolean',
-                        '--timeout', '3000',
+                        '--timeout', '10000',
                         '--req',
                         f'sdf_filename: "{sparkx_model_path}" name: "sparkx_car"'
                     ],
@@ -40,28 +54,17 @@ def generate_launch_description():
         ),
 
         TimerAction(
-            period=3.0,
+            period=10.0,
             actions=[
-                ExecuteProcess(
-                    cmd=[
-                        'ros2', 'run', 'ros_gz_bridge', 'parameter_bridge',
-                        '/cmd_vel@geometry_msgs/msg/Twist]gz.msgs.Twist'
-                    ],
-                    output='screen'
-                ),
-                ExecuteProcess(
-                    cmd=[
-                        'ros2', 'run', 'ros_gz_bridge', 'parameter_bridge',
-                        '/model/sparkx_car/odometry@nav_msgs/msg/Odometry[gz.msgs.Odometry'
-                    ],
-                    output='screen'
-                ),
-                ExecuteProcess(
-                    cmd=[
-                        'ros2', 'run', 'ros_gz_bridge', 'parameter_bridge',
-                        '/imu@sensor_msgs/msg/Imu[gz.msgs.IMU'
-                    ],
-                    output='screen'
+                Node(
+                    package='ros_gz_bridge',
+                    executable='bridge_node',
+                    name='ros_gz_bridge',
+                    output='screen',
+                    parameters=[
+                        {'config_file': bridge_config_path},
+                        {'use_sim_time': True},
+                    ]
                 ),
             ]
         ),
