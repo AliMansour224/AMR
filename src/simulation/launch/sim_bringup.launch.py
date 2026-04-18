@@ -46,8 +46,7 @@ def generate_launch_description():
                         '--reptype', 'gz.msgs.Boolean',
                         '--timeout', '10000',
                         '--req',
-                        f'sdf_filename: "{sparkx_model_path}" name: "sparkx_car"'
-                    ],
+                        f'sdf_filename: "{sparkx_model_path}" name: "sparkx_car"'                    ],
                     output='screen'
                 ),
             ]

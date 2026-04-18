@@ -1,6 +1,9 @@
+import os
+from glob import glob
+
 from setuptools import find_packages, setup
 
-package_name = 'planning'
+package_name = 'navigation'
 
 setup(
     name=package_name,
@@ -10,17 +13,21 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
+        (os.path.join('share', package_name, 'launch'),
+         glob('launch/*.launch.py')),
+        (os.path.join('share', package_name, 'config'),
+         glob('config/*.yaml')),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
     maintainer='ahmed',
     maintainer_email='ahmed@todo.todo',
-    description='Planning package',
+    description='Navigation package',
     license='TODO: License declaration',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'planning_node = planning.planning_node:main',
+            'navigation_node = navigation.navigation_node:main',
         ],
     },
 )
