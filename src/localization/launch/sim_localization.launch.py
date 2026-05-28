@@ -12,31 +12,10 @@ from ament_index_python.packages import get_package_share_directory
 
 def generate_launch_description():
     pkg_path = get_package_share_directory('localization')
-    slam_config = os.path.join(pkg_path, 'config', 'slam_mapping.yaml')
+    slam_config = os.path.join(pkg_path, 'config', 'slam_localization_adc.yaml')
     ekf_config = os.path.join(pkg_path, 'config', 'ekf.yaml')
+    map_yaml_file = os.path.join(pkg_path, 'maps', 'adc_track_v1_map.yaml')
 
-    mock_lidar_node = mock_lidar_node = mock_lidar_node = Node(
-      package='sensor_drivers',
-      executable='mock_lidar',
-      name='mock_lidar',
-      output='screen',
-      parameters=[{
-        'use_sim_time': True,
-        'scan_topic': '/sensors/lidar/scan',
-        'odom_topic': '/odometry/filtered',
-        'frame_id': 'lidar_link',
-        'publish_rate_hz': 10.0,
-        'angle_min': -3.14159,
-        'angle_max': 3.14159,
-        'num_beams': 360,
-        'range_min': 0.12,
-        'range_max': 12.0,
-        'room_min_x': -8.0,
-        'room_max_x': 8.0,
-        'room_min_y': -6.0,
-        'room_max_y': 6.0,
-    }]
-)
 
     frame_normalizer_node = frame_normalizer_node = Node(
       package='localization',
@@ -45,7 +24,7 @@ def generate_launch_description():
       output='screen',
       parameters=[{
         'use_sim_time': True,
-        'scan_in': '/sensors/lidar/scan',
+        'scan_in': '/scan',
         'scan_out': '/scan_localization',
         'odom_in': '/wheel_odom',
         'odom_out': '/wheel_odom_localization',
@@ -60,7 +39,7 @@ def generate_launch_description():
         executable='ekf_node',
         name='ekf_filter_node',
         output='screen',
-        parameters=[ekf_config],
+        parameters=[ekf_config, {'use_sim_time': True}],
     )
 
     slam_node = LifecycleNode(
@@ -70,6 +49,16 @@ def generate_launch_description():
         namespace='',
         output='screen',
         parameters=[slam_config, {'use_sim_time': True}],
+        remappings=[('/map', '/slam_map')]
+    )
+
+    map_server_node = LifecycleNode(
+        package='nav2_map_server',
+        executable='map_server',
+        name='map_server',
+        namespace='',
+        output='screen',
+        parameters=[{'yaml_filename': map_yaml_file}, {'use_sim_time': True}]
     )
 
     configure_slam = EmitEvent(
@@ -96,11 +85,37 @@ def generate_launch_description():
         )
     )
 
+    configure_map_server = EmitEvent(
+        event=ChangeState(
+            lifecycle_node_matcher=matches_action(map_server_node),
+            transition_id=Transition.TRANSITION_CONFIGURE,
+        )
+    )
+
+    activate_map_server = RegisterEventHandler(
+        OnStateTransition(
+            target_lifecycle_node=map_server_node,
+            start_state='configuring',
+            goal_state='inactive',
+            entities=[
+                LogInfo(msg='[LifecycleLaunch] map_server activating'),
+                EmitEvent(
+                    event=ChangeState(
+                        lifecycle_node_matcher=matches_action(map_server_node),
+                        transition_id=Transition.TRANSITION_ACTIVATE,
+                    )
+                ),
+            ],
+        )
+    )
+
     return LaunchDescription([
-        mock_lidar_node,
         frame_normalizer_node,
         ekf_node,
         slam_node,
+        map_server_node,
         configure_slam,
         activate_slam,
+        configure_map_server,
+        activate_map_server,
     ])

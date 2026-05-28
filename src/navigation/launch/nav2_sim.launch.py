@@ -12,29 +12,33 @@ def generate_launch_description():
     costmap_params = os.path.join(navigation_dir, 'config', 'nav2_costmaps.yaml')
     bt_params = os.path.join(navigation_dir, 'config', 'nav2_bt_navigator.yaml')
     behavior_params = os.path.join(navigation_dir, 'config', 'nav2_behavior.yaml')
+    velocity_smoother_params = os.path.join(navigation_dir, 'config', 'nav2_velocity_smoother.yaml')
+    safety_supervisor_params = os.path.join(navigation_dir, 'config', 'safety_supervisor.yaml')
 
     planner_server = Node(
         package='nav2_planner',
         executable='planner_server',
         name='planner_server',
         output='screen',
-        parameters=[planner_params, costmap_params],
+        parameters=[planner_params, costmap_params, {'use_sim_time': True}],
     )
 
     controller_server = Node(
-        package='nav2_controller',
-        executable='controller_server',
-        name='controller_server',
-        output='screen',
-        parameters=[controller_params, costmap_params],
+    package='nav2_controller',
+    executable='controller_server',
+    name='controller_server',
+    output='screen',
+    parameters=[controller_params, costmap_params, {'use_sim_time': True}],
+    remappings=[('cmd_vel', '/cmd_vel_nav')],
     )
+
 
     bt_navigator = Node(
         package='nav2_bt_navigator',
         executable='bt_navigator',
         name='bt_navigator',
         output='screen',
-        parameters=[bt_params],
+        parameters=[bt_params, {'use_sim_time': True}],
     )
 
     behavior_server = Node(
@@ -42,7 +46,7 @@ def generate_launch_description():
         executable='behavior_server',
         name='behavior_server',
         output='screen',
-        parameters=[behavior_params],
+        parameters=[behavior_params, {'use_sim_time': True}],
     )
 
     lifecycle_manager = Node(
@@ -57,9 +61,29 @@ def generate_launch_description():
                 'planner_server',
                 'controller_server',
                 'bt_navigator',
-                'behavior_server'
+                'behavior_server',
+                'velocity_smoother'
             ]
         }],
+    )
+    velocity_smoother = Node(
+        package='nav2_velocity_smoother',
+        executable='velocity_smoother',
+        name='velocity_smoother',
+        output='screen',
+        parameters=[velocity_smoother_params, {'use_sim_time': True}],
+        remappings=[
+            ('cmd_vel', '/cmd_vel_nav'),
+            ('cmd_vel_smoothed', '/cmd_vel_smoothed')
+        ],
+    )
+
+    safety_supervisor = Node(
+        package='navigation',
+        executable='safety_supervisor',
+        name='safety_supervisor',
+        output='screen',
+        parameters=[safety_supervisor_params, {'use_sim_time': True}],
     )
 
     return LaunchDescription([
@@ -68,4 +92,6 @@ def generate_launch_description():
         bt_navigator,
         behavior_server,
         lifecycle_manager,
+        velocity_smoother,
+        safety_supervisor,
     ])

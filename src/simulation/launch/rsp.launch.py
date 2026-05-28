@@ -16,6 +16,12 @@ def generate_launch_description():
     return LaunchDescription([
         DeclareLaunchArgument('use_sim_time', default_value='false'),
         Node(
+            package='joint_state_publisher',
+            executable='joint_state_publisher',
+            name='joint_state_publisher',
+            parameters=[{'robot_description': robot_description_raw, 'use_sim_time': use_sim_time}]
+        ),
+        Node(
             package='robot_state_publisher',
             executable='robot_state_publisher',
             output='screen',

@@ -28,6 +28,7 @@ setup(
     entry_points={
         'console_scripts': [
             'navigation_node = navigation.navigation_node:main',
+            'safety_supervisor = navigation.safety_supervisor:main',
         ],
     },
 )
