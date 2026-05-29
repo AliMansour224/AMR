@@ -29,7 +29,7 @@ class FrameNormalizerNode(Node):
         self.base_frame_id = self.get_parameter('base_frame_id').get_parameter_value().string_value
 
         sensor_qos = QoSProfile(
-            reliability=ReliabilityPolicy.RELIABLE,
+            reliability=ReliabilityPolicy.BEST_EFFORT,
             durability=DurabilityPolicy.VOLATILE,
             history=HistoryPolicy.KEEP_LAST,
             depth=10,

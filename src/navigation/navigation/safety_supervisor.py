@@ -38,9 +38,10 @@ class SafetySupervisor(Node):
         self.last_scan_time = None
         self.last_odom_time = None
 
+        from rclpy.qos import qos_profile_sensor_data
         self.cmd_sub = self.create_subscription(Twist, cmd_in_topic, self.cmd_callback, 10)
-        self.scan_sub = self.create_subscription(LaserScan, scan_topic, self.scan_callback, 10)
-        self.odom_sub = self.create_subscription(Odometry, odom_topic, self.odom_callback, 10)
+        self.scan_sub = self.create_subscription(LaserScan, scan_topic, self.scan_callback, qos_profile_sensor_data)
+        self.odom_sub = self.create_subscription(Odometry, odom_topic, self.odom_callback, qos_profile_sensor_data)
 
         self.cmd_pub = self.create_publisher(Twist, cmd_out_topic, 10)
         self.safe_pub = self.create_publisher(Bool, '/safety_status', 10)

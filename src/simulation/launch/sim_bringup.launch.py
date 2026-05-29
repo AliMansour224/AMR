@@ -9,7 +9,7 @@ from ament_index_python.packages import get_package_share_directory
 
 def generate_launch_description():
     pkg_path = get_package_share_directory('simulation')
-    world_path = os.path.join(pkg_path, 'worlds', 'adc_track_v1.sdf')
+    world_path = os.path.join(pkg_path, 'worlds', 'empty_world.sdf')
     sparkx_model_path = os.path.join(pkg_path, 'models', 'sparkx_car', 'model.sdf')
     models_path = os.path.join(pkg_path, 'models')
     bridge_config_path = os.path.join(pkg_path, 'config', 'ros_gz_bridges.yaml')
@@ -41,12 +41,12 @@ def generate_launch_description():
                 ExecuteProcess(
                     cmd=[
                         'gz', 'service',
-                        '-s', '/world/adc_track_v1/create',
+                        '-s', '/world/empty/create',
                         '--reqtype', 'gz.msgs.EntityFactory',
                         '--reptype', 'gz.msgs.Boolean',
                         '--timeout', '10000',
                         '--req',
-                        f'sdf_filename: "{sparkx_model_path}" name: "sparkx_car" pose: {{position: {{x: 5.0, y: -4.0, z: 0.1}}, orientation: {{x: 0, y: 0, z: 0.7068, w: 0.7074}}}}',
+                        f'sdf_filename: "{sparkx_model_path}" name: "sparkx_car" pose: {{position: {{x: 0.0, y: 0.0, z: 0.1}}, orientation: {{x: 0, y: 0, z: 0, w: 1.0}}}}',
                     ],
                     output='screen'
                 ),

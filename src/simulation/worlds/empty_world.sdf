@@ -17,7 +17,7 @@
     <plugin
       filename="gz-sim-sensors-system"
       name="gz::sim::systems::Sensors">
-      <render_engine>ogre</render_engine>
+      <render_engine>ogre2</render_engine>
     </plugin>
 
     <light name="sun" type="directional">
@@ -56,94 +56,6 @@
             <ambient>0.8 0.8 0.8 1</ambient>
             <diffuse>0.8 0.8 0.8 1</diffuse>
           </material>
-        </visual>
-      </link>
-    </model>
-
-    <!-- North wall -->
-    <model name="wall_north">
-      <static>true</static>
-      <pose>0 4 0.5 0 0 0</pose>
-      <link name="link">
-        <collision name="collision">
-          <geometry>
-            <box>
-              <size>8 0.2 1.0</size>
-            </box>
-          </geometry>
-        </collision>
-        <visual name="visual">
-          <geometry>
-            <box>
-              <size>8 0.2 1.0</size>
-            </box>
-          </geometry>
-        </visual>
-      </link>
-    </model>
-
-    <!-- South wall -->
-    <model name="wall_south">
-      <static>true</static>
-      <pose>0 -4 0.5 0 0 0</pose>
-      <link name="link">
-        <collision name="collision">
-          <geometry>
-            <box>
-              <size>8 0.2 1.0</size>
-            </box>
-          </geometry>
-        </collision>
-        <visual name="visual">
-          <geometry>
-            <box>
-              <size>8 0.2 1.0</size>
-            </box>
-          </geometry>
-        </visual>
-      </link>
-    </model>
-
-    <!-- East wall -->
-    <model name="wall_east">
-      <static>true</static>
-      <pose>4 0 0.5 0 0 0</pose>
-      <link name="link">
-        <collision name="collision">
-          <geometry>
-            <box>
-              <size>0.2 8 1.0</size>
-            </box>
-          </geometry>
-        </collision>
-        <visual name="visual">
-          <geometry>
-            <box>
-              <size>0.2 8 1.0</size>
-            </box>
-          </geometry>
-        </visual>
-      </link>
-    </model>
-
-    <!-- West wall -->
-    <model name="wall_west">
-      <static>true</static>
-      <pose>-4 0 0.5 0 0 0</pose>
-      <link name="link">
-        <collision name="collision">
-          <geometry>
-            <box>
-              <size>0.2 8 1.0</size>
-            </box>
-          </geometry>
-        </collision>
-        <visual name="visual">
-          <geometry>
-            <box>
-              <size>0.2 8 1.0</size>
-            </box>
-          </geometry>
         </visual>
       </link>
     </model>

@@ -12,7 +12,7 @@ from ament_index_python.packages import get_package_share_directory
 
 def generate_launch_description():
     pkg_path = get_package_share_directory('localization')
-    slam_config = os.path.join(pkg_path, 'config', 'slam_localization_adc.yaml')
+    slam_config = os.path.join(pkg_path, 'config', 'slam_mapping.yaml')
     ekf_config = os.path.join(pkg_path, 'config', 'ekf.yaml')
     map_yaml_file = os.path.join(pkg_path, 'maps', 'adc_track_v1_map.yaml')
 
@@ -48,17 +48,7 @@ def generate_launch_description():
         name='slam_toolbox',
         namespace='',
         output='screen',
-        parameters=[slam_config, {'use_sim_time': True}],
-        remappings=[('/map', '/slam_map')]
-    )
-
-    map_server_node = LifecycleNode(
-        package='nav2_map_server',
-        executable='map_server',
-        name='map_server',
-        namespace='',
-        output='screen',
-        parameters=[{'yaml_filename': map_yaml_file}, {'use_sim_time': True}]
+        parameters=[slam_config, {'use_sim_time': True}]
     )
 
     configure_slam = EmitEvent(
@@ -85,37 +75,10 @@ def generate_launch_description():
         )
     )
 
-    configure_map_server = EmitEvent(
-        event=ChangeState(
-            lifecycle_node_matcher=matches_action(map_server_node),
-            transition_id=Transition.TRANSITION_CONFIGURE,
-        )
-    )
-
-    activate_map_server = RegisterEventHandler(
-        OnStateTransition(
-            target_lifecycle_node=map_server_node,
-            start_state='configuring',
-            goal_state='inactive',
-            entities=[
-                LogInfo(msg='[LifecycleLaunch] map_server activating'),
-                EmitEvent(
-                    event=ChangeState(
-                        lifecycle_node_matcher=matches_action(map_server_node),
-                        transition_id=Transition.TRANSITION_ACTIVATE,
-                    )
-                ),
-            ],
-        )
-    )
-
     return LaunchDescription([
         frame_normalizer_node,
         ekf_node,
         slam_node,
-        map_server_node,
         configure_slam,
         activate_slam,
-        configure_map_server,
-        activate_map_server,
     ])
