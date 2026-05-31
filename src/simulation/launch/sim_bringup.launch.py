@@ -9,8 +9,8 @@ from ament_index_python.packages import get_package_share_directory
 
 def generate_launch_description():
     pkg_path = get_package_share_directory('simulation')
-    world_path = os.path.join(pkg_path, 'worlds', 'empty_world.sdf')
-    sparkx_model_path = os.path.join(pkg_path, 'models', 'sparkx_car', 'model.sdf')
+    world_path = os.path.join(pkg_path, 'worlds', 'warehouse.sdf')
+    amr_model_path = os.path.join(pkg_path, 'models', 'amr_car', 'model.sdf')
     models_path = os.path.join(pkg_path, 'models')
     bridge_config_path = os.path.join(pkg_path, 'config', 'ros_gz_bridges.yaml')
     rsp_launch_path = os.path.join(pkg_path, 'launch', 'rsp.launch.py')
@@ -41,12 +41,12 @@ def generate_launch_description():
                 ExecuteProcess(
                     cmd=[
                         'gz', 'service',
-                        '-s', '/world/empty/create',
+                        '-s', '/world/warehouse/create',
                         '--reqtype', 'gz.msgs.EntityFactory',
                         '--reptype', 'gz.msgs.Boolean',
                         '--timeout', '10000',
                         '--req',
-                        f'sdf_filename: "{sparkx_model_path}" name: "sparkx_car" pose: {{position: {{x: 0.0, y: 0.0, z: 0.1}}, orientation: {{x: 0, y: 0, z: 0, w: 1.0}}}}',
+                        f'sdf_filename: "{amr_model_path}" name: "amr_car" pose: {{position: {{x: 0.0, y: 0.0, z: 0.1}}, orientation: {{x: 0, y: 0, z: 0, w: 1.0}}}}',
                     ],
                     output='screen'
                 ),
@@ -65,6 +65,16 @@ def generate_launch_description():
                         {'config_file': bridge_config_path},
                         {'use_sim_time': True},
                     ]
+                ),
+                Node(
+                    package='apriltag_ros',
+                    executable='apriltag_node',
+                    name='apriltag_node',
+                    remappings=[
+                        ('image_rect', '/camera/image_raw'),
+                        ('camera_info', '/camera/camera_info')
+                    ],
+                    parameters=[{'use_sim_time': True}]
                 ),
             ]
         ),

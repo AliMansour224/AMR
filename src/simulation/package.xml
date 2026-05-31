@@ -2,7 +2,7 @@
 <package format="3">
   <name>simulation</name>
   <version>0.1.0</version>
-  <description>Gazebo simulation environment for SparkX autonomy stack</description>
+  <description>Gazebo simulation environment for AMR autonomy stack</description>
   <maintainer email="ahmed@example.com">Ahmed</maintainer>
   <license>Apache-2.0</license>
 

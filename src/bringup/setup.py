@@ -15,7 +15,7 @@ setup(
     zip_safe=True,
     maintainer='Ahmed',
     maintainer_email='ahmedlearningfinnish@gmail.com',
-    description='Top-level launch package for SparkX autonomy system modes.',
+    description='Top-level launch package for AMR autonomy system modes.',
     license='Apache-2.0',
     tests_require=['pytest'],
     entry_points={},

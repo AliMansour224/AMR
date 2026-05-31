@@ -2,7 +2,7 @@
 <package format="3">
   <name>bringup</name>
   <version>0.0.1</version>
-  <description>Top-level launch package for SparkX autonomy system modes.</description>
+  <description>Top-level launch package for AMR autonomy system modes.</description>
 
   <maintainer email="ahmedlearningfinnish@gmail.com">Ahmed</maintainer>
   <license>Apache-2.0</license>

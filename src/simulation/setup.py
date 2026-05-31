@@ -32,8 +32,8 @@ setup(
         # Model files
         (os.path.join('share', package_name, 'models', 'lidar_test'),
          glob('models/lidar_test/*')),
-        (os.path.join('share', package_name, 'models', 'sparkx_car'),
-         glob('models/sparkx_car/*')),
+        (os.path.join('share', package_name, 'models', 'amr_car'),
+         glob('models/amr_car/*')),
         (os.path.join('share', package_name, 'models', 'imu_test'),
          glob('models/imu_test/*')),
     ],
@@ -41,7 +41,7 @@ setup(
     zip_safe=True,
     maintainer='Ahmed',
     maintainer_email='ahmed@example.com',
-    description='Gazebo simulation environment for SparkX autonomy stack',
+    description='Gazebo simulation environment for AMR autonomy stack',
     license='Apache-2.0',
     tests_require=['pytest'],
     entry_points={

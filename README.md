@@ -1,6 +1,6 @@
-# SparkX
+# AMR
 
-ROS 2 Jazzy autonomy workspace for SparkX v1.
+ROS 2 Jazzy autonomy workspace for AMR v1.
 
 ## Current baseline
 Active Phase 0 baseline includes:

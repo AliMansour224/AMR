@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <sdf version="1.9">
-  <model name="sparkx_car">
+  <model name="amr_car">
     <pose>0 0 0.1 0 0 0</pose>
 
     <link name="chassis">
@@ -84,6 +84,72 @@
           </linear_acceleration>
         </imu>
       </sensor>
+
+      <sensor name="camera_sensor" type="camera">
+        <pose>0.25 0 0.25 0 0 0</pose>
+        <always_on>1</always_on>
+        <update_rate>30</update_rate>
+        <camera>
+          <horizontal_fov>1.047</horizontal_fov>
+          <image>
+            <width>640</width>
+            <height>480</height>
+          </image>
+          <clip>
+            <near>0.1</near>
+            <far>100</far>
+          </clip>
+        </camera>
+        <topic>/camera/image_raw</topic>
+        <gz_frame_id>camera_link</gz_frame_id>
+      </sensor>
+
+      <sensor name="ultrasonic_sensor" type="gpu_lidar">
+        <pose>0.3 0 0.05 0 0 0</pose>
+        <always_on>1</always_on>
+        <update_rate>10</update_rate>
+        <topic>/ultrasonic</topic>
+        <gz_frame_id>ultrasonic_link</gz_frame_id>
+        <lidar>
+          <scan>
+            <horizontal>
+              <samples>5</samples>
+              <resolution>1</resolution>
+              <min_angle>-0.1</min_angle>
+              <max_angle>0.1</max_angle>
+            </horizontal>
+          </scan>
+          <range>
+            <min>0.02</min>
+            <max>4.0</max>
+            <resolution>0.01</resolution>
+          </range>
+        </lidar>
+      </sensor>
+
+      <sensor name="ir_sensor" type="gpu_lidar">
+        <pose>0.3 0.1 0.05 0 0 0</pose>
+        <always_on>1</always_on>
+        <update_rate>20</update_rate>
+        <topic>/infrared</topic>
+        <gz_frame_id>ir_link</gz_frame_id>
+        <lidar>
+          <scan>
+            <horizontal>
+              <samples>1</samples>
+              <resolution>1</resolution>
+              <min_angle>0</min_angle>
+              <max_angle>0</max_angle>
+            </horizontal>
+          </scan>
+          <range>
+            <min>0.01</min>
+            <max>0.8</max>
+            <resolution>0.01</resolution>
+          </range>
+        </lidar>
+      </sensor>
+
     </link>
 
 <link name="lidar_link">

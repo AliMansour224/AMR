@@ -14,7 +14,7 @@ class OdometryBridge(Node):
 
         self.subscription = self.create_subscription(
             Odometry,
-            '/model/sparkx_car/odometry',
+            '/model/amr_car/odometry',
             self.odometry_callback,
             10
         )

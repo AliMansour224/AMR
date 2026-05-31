@@ -2,7 +2,7 @@
 <package format="3">
   <name>localization</name>
   <version>0.1.0</version>
-  <description>Localization subsystem for SparkX</description>
+  <description>Localization subsystem for AMR</description>
   <maintainer email="ahmed@example.com">Ahmed</maintainer>
   <license>Apache-2.0</license>
 

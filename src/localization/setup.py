@@ -23,7 +23,7 @@ setup(
     zip_safe=True,
     maintainer='Ahmed',
     maintainer_email='ahmed@example.com',
-    description='Localization subsystem for SparkX',
+    description='Localization subsystem for AMR',
     license='Apache-2.0',
     tests_require=['pytest'],
     entry_points={

@@ -23,9 +23,9 @@
 - `robot_state_publisher` is the only owner of base-to-sensor TF.
 - Localization packages must not publish sensor-frame transforms.
 - During current simulation bringup, some Gazebo-bridged topic messages may still use temporary Gazebo-native `frame_id` values such as:
-  - `sparkx_car/odom`
-  - `sparkx_car/chassis`
-  - `sparkx_car/chassis/lidar`
+  - `amr_car/odom`
+  - `amr_car/chassis`
+  - `amr_car/chassis/lidar`
 - These message `frame_id` values do not change the TF ownership contract above.
 - Frame-id normalization for simulated sensor/odometry messages can be cleaned up later if needed, but the TF source of truth remains the ownership model above.
 

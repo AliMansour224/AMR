@@ -12,7 +12,7 @@ class ImuDriver(Node):
 
         self.sub = self.create_subscription(
             Odometry,
-            '/model/sparkx_car/odometry',
+            '/model/amr_car/odometry',
             self.odom_callback,
             10
         )
