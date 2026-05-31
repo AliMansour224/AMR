@@ -87,13 +87,14 @@
 
       <sensor name="camera_sensor" type="camera">
         <pose>0.25 0 0.25 0 0 0</pose>
-        <always_on>1</always_on>
+        <always_on>true</always_on>
         <update_rate>30</update_rate>
         <camera>
           <horizontal_fov>1.047</horizontal_fov>
           <image>
             <width>640</width>
             <height>480</height>
+            <format>R8G8B8</format>
           </image>
           <clip>
             <near>0.1</near>
@@ -106,10 +107,11 @@
 
       <sensor name="ultrasonic_sensor" type="gpu_lidar">
         <pose>0.3 0 0.05 0 0 0</pose>
-        <always_on>1</always_on>
+        <always_on>true</always_on>
         <update_rate>10</update_rate>
         <topic>/ultrasonic</topic>
         <gz_frame_id>ultrasonic_link</gz_frame_id>
+        <visualize>true</visualize>
         <lidar>
           <scan>
             <horizontal>
@@ -129,10 +131,11 @@
 
       <sensor name="ir_sensor" type="gpu_lidar">
         <pose>0.3 0.1 0.05 0 0 0</pose>
-        <always_on>1</always_on>
+        <always_on>true</always_on>
         <update_rate>20</update_rate>
         <topic>/infrared</topic>
         <gz_frame_id>ir_link</gz_frame_id>
+        <visualize>true</visualize>
         <lidar>
           <scan>
             <horizontal>
