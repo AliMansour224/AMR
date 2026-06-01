@@ -1,7 +1,13 @@
 <?xml version="1.0"?>
 <robot name="amr_vehicle" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
+  <!-- Model origin (matches Gazebo model frame, child of odom) -->
   <link name="base_link">
+    <!-- Optional: a small dummy visual so we can see the exact origin in RViz if needed, but usually empty -->
+  </link>
+
+  <!-- Chassis Visual Link -->
+  <link name="chassis_link">
     <visual>
       <geometry>
         <box size="0.3 0.3 0.1"/>
@@ -9,42 +15,141 @@
       <material name="blue">
         <color rgba="0.0 0.0 0.8 1.0"/>
       </material>
+      <!-- Visual offset: base_link->chassis_link is 0.15, 0, 0.075. Visual offset in SDF is 0, 0, 0.025 -->
+      <origin xyz="0 0 0.025" rpy="0 0 0"/>
     </visual>
   </link>
-  <link name="lidar_link"/>
-  <link name="imu_link"/>
-  <link name="camera_link"/>
-  <link name="ultrasonic_link"/>
-  <link name="ir_link"/>
 
+  <joint name="base_to_chassis" type="fixed">
+    <parent link="base_link"/>
+    <child link="chassis_link"/>
+    <origin xyz="0.15 0.0 0.075" rpy="0 0 0"/>
+  </joint>
+
+  <!-- Wheels -->
+  <link name="left_wheel">
+    <visual>
+      <geometry>
+        <cylinder radius="0.05" length="0.04"/>
+      </geometry>
+      <material name="black">
+        <color rgba="0.1 0.1 0.1 1.0"/>
+      </material>
+    </visual>
+  </link>
+
+  <joint name="base_to_left_wheel" type="continuous">
+    <parent link="base_link"/>
+    <child link="left_wheel"/>
+    <origin xyz="0 0.175 0.05" rpy="-1.5708 0 0"/>
+    <axis xyz="0 0 1"/>
+  </joint>
+
+  <link name="right_wheel">
+    <visual>
+      <geometry>
+        <cylinder radius="0.05" length="0.04"/>
+      </geometry>
+      <material name="black">
+        <color rgba="0.1 0.1 0.1 1.0"/>
+      </material>
+    </visual>
+  </link>
+
+  <joint name="base_to_right_wheel" type="continuous">
+    <parent link="base_link"/>
+    <child link="right_wheel"/>
+    <origin xyz="0 -0.175 0.05" rpy="1.5708 0 0"/>
+    <axis xyz="0 0 1"/>
+  </joint>
+
+  <link name="caster_wheel">
+    <visual>
+      <geometry>
+        <sphere radius="0.025"/>
+      </geometry>
+      <material name="grey">
+        <color rgba="0.5 0.5 0.5 1.0"/>
+      </material>
+    </visual>
+  </link>
+
+  <joint name="base_to_caster" type="fixed">
+    <parent link="base_link"/>
+    <child link="caster_wheel"/>
+    <origin xyz="0.25 0.0 0.025" rpy="0 0 0"/>
+  </joint>
+
+  <!-- Sensors -->
+  <link name="lidar_link">
+    <visual>
+      <geometry>
+        <cylinder radius="0.03" length="0.04"/>
+      </geometry>
+      <material name="red">
+        <color rgba="1.0 0.0 0.0 1.0"/>
+      </material>
+    </visual>
+  </link>
   <joint name="base_to_lidar" type="fixed">
     <parent link="base_link"/>
     <child link="lidar_link"/>
-    <origin xyz="0.20 0.0 0.20" rpy="0 0 0"/>
+    <origin xyz="0.33 0.0 0.32" rpy="0 0 0"/>
   </joint>
 
-  <joint name="base_to_imu" type="fixed">
-    <parent link="base_link"/>
-    <child link="imu_link"/>
-    <origin xyz="0.0 0.0 0.10" rpy="0 0 0"/>
-  </joint>
-
+  <link name="camera_link">
+    <visual>
+      <geometry>
+        <box size="0.02 0.05 0.02"/>
+      </geometry>
+      <material name="green">
+        <color rgba="0.0 1.0 0.0 1.0"/>
+      </material>
+    </visual>
+  </link>
   <joint name="base_to_camera" type="fixed">
     <parent link="base_link"/>
     <child link="camera_link"/>
-    <origin xyz="0.25 0.0 0.25" rpy="0 0 0"/>
+    <origin xyz="0.40 0.0 0.325" rpy="0 0 0"/>
   </joint>
 
+  <link name="ultrasonic_link">
+    <visual>
+      <geometry>
+        <box size="0.02 0.02 0.02"/>
+      </geometry>
+      <material name="yellow">
+        <color rgba="1.0 1.0 0.0 1.0"/>
+      </material>
+    </visual>
+  </link>
   <joint name="base_to_ultrasonic" type="fixed">
     <parent link="base_link"/>
     <child link="ultrasonic_link"/>
-    <origin xyz="0.3 0.0 0.05" rpy="0 0 0"/>
+    <origin xyz="0.45 0.0 0.125" rpy="0 0 0"/>
   </joint>
 
+  <link name="ir_link">
+    <visual>
+      <geometry>
+        <box size="0.01 0.01 0.01"/>
+      </geometry>
+      <material name="white">
+        <color rgba="1.0 1.0 1.0 1.0"/>
+      </material>
+    </visual>
+  </link>
   <joint name="base_to_ir" type="fixed">
     <parent link="base_link"/>
     <child link="ir_link"/>
-    <origin xyz="0.3 0.1 0.05" rpy="0 0 0"/>
+    <origin xyz="0.45 0.1 0.125" rpy="0 0 0"/>
+  </joint>
+
+  <link name="imu_link"/>
+  <joint name="base_to_imu" type="fixed">
+    <parent link="base_link"/>
+    <child link="imu_link"/>
+    <origin xyz="0.15 0.0 0.075" rpy="0 0 0"/>
   </joint>
 
 </robot>

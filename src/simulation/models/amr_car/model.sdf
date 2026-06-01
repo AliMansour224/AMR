@@ -3,7 +3,7 @@
   <model name="amr_car">
     <pose>0 0 0.1 0 0 0</pose>
 
-    <link name="chassis">
+    <link name="base_link">
       <pose>0.15 0 0.075 0 0 0</pose>
 
       <inertial>
@@ -196,7 +196,7 @@
   </sensor>
 </link>
     <joint name="lidar_joint" type="fixed">
-      <parent>chassis</parent>
+      <parent>base_link</parent>
       <child>lidar_link</child>
     </joint>
 
@@ -244,7 +244,7 @@
     </link>
 
     <joint name="caster_wheel_joint" type="fixed">
-      <parent>chassis</parent>
+      <parent>base_link</parent>
       <child>caster_wheel</child>
     </joint>
 
@@ -311,7 +311,7 @@
     </link>
 
     <joint name="left_wheel_joint" type="revolute">
-      <parent>chassis</parent>
+      <parent>base_link</parent>
       <child>left_wheel</child>
       <axis>
         <xyz>0 0 -1</xyz>
@@ -319,7 +319,7 @@
     </joint>
 
     <joint name="right_wheel_joint" type="revolute">
-      <parent>chassis</parent>
+      <parent>base_link</parent>
       <child>right_wheel</child>
       <axis>
         <xyz>0 0 1</xyz>
